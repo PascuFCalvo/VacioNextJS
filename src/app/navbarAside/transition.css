@@ -1,0 +1,9 @@
+.social-icon {
+   font-size: 3xl;
+
+   transition: font-size 0.4s ease;
+}
+
+.social-icon:hover {
+   font-size: 5xl;
+}
