@@ -23,7 +23,7 @@ export default function MainPage2() {
         </h2>
       </div>
       <div className="w-screen flex flex-col md:flex-row">
-        <div className="h-full w-1/3 min-w-[600px] flex flex-col ">
+        <div className="h-full w-1/3 min-w-96 flex flex-col ">
           <div className="relative h-full min-w-600">
             <Link href="https://www.instagram.com/dualcillo/" target="_blank">
               <Image
