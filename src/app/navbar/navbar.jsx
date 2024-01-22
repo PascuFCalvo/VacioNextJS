@@ -1,4 +1,5 @@
 import { PlayArrow } from "@mui/icons-material";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -20,7 +21,12 @@ const Navbar = () => {
             isNavbarOpen ? "hidden" : "block"
           }`}
         >
-          <img src="/../../../assets/tripa.jpeg" alt="hamburguesa" />
+          <Image
+            src="/../../../assets/tripa.png"
+            alt="hamburguesa"
+            width={100}
+            height={100}
+          />
           <PlayArrow className="text-white text-4xl"></PlayArrow>
         </div>
       </button>

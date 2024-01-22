@@ -1,3 +1,4 @@
+"use client ";
 import {
   Instagram,
   LinkedIn,
@@ -8,6 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import "./transition.css";
+import { Button } from "@mui/material";
 
 export default function MainPage2() {
   return (
@@ -23,8 +25,8 @@ export default function MainPage2() {
         </h2>
       </div>
       <div className="w-screen flex flex-col md:flex-row">
-        <div className="h-full w-1/3 min-w-96 flex flex-col ">
-          <div className="relative h-full min-w-600">
+        <div className=" bg-cover bg-center h-full w-1/3 min-w-96 ">
+          <div className="relative h-full min-w-600 flex ">
             <Link href="https://www.instagram.com/dualcillo/" target="_blank">
               <Image
                 src="/../../../assets/retrato.jpg"
@@ -89,10 +91,13 @@ export default function MainPage2() {
           </button>
         </div>
       </div>
-      <div className="relateive bg-emerald-400 w-screen flex justify-evenly  items-center">
-        <h1 className="text-amber-50 text-6xl font-bold ">
+      <div className="relateive bg-emerald-400 w-screen flex flex-col md:flex-row justify-around  items-center">
+        <Link
+          href="./formBook/"
+          className="text-amber-50 text-4xl md:text-6xl  font-bold hover:text-black hover:cursor-pointer"
+        >
           HAZTE CON MI LIBRO
-        </h1>
+        </Link>
         <Image
           src="/../../../assets/portada-libro.jpg"
           alt="cara"

@@ -3,22 +3,23 @@ import Image from "next/image";
 export default function MainPage3() {
   return (
     <>
-      <div className="relative w-screen max-h-96 overflow-hidden">
+      <section className="bg-cover bg-center min-h-96 relative w-screen min-h-500 overflow-hidden">
         <Image
           src="/../../../assets/yisus2.jpg"
           alt="cara"
-          width={2000}
-          height={500}
-          className="object-cover w-full h-full"
+          layout="fill"
+          objectFit="cover"
         />
         <div className="absolute right-0 inset-0 w-screen flex flex-col items-end justify-center text-white pr-10">
-          <h1 className="text-3xl text-center w-2/3 font-bold">
+          <h1 className="lg:text-3xl text-center w-2/3 font-bold">
             Y es que, si alguien como yo, sin tripas, puede disfrutar y
             completar carreras de ultra distancia, ¿de qué no eres capaz tú?
           </h1>
-          <h1 className="text-6xl mt-6 font-bold text-center">#NOLOPIENSES</h1>
+          <h1 className="lg:text-6xl md:text-4xl sm:text-2xl mt-6 font-bold text-center">
+            #NOLOPIENSES
+          </h1>
         </div>
-      </div>
+      </section>
     </>
   );
 }

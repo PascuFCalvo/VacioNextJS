@@ -14,8 +14,8 @@ export default function Home() {
         <MainPage />
         <MainPage2 />
         <MainPage3 />
-        <Gallery />
         <NavbarAside />
+        <Gallery />
       </main>
     </>
   );
