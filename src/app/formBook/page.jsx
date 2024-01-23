@@ -18,38 +18,33 @@ export default function Home() {
       return false;
     }
 
-    try {
-      const response = await fetch("api/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email }),
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+
+    await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        if (data && data.id) {
+          alert(
+            `Thank you for your interest ${name}! We will get back to you soon!`
+          );
+          setName("");
+          setEmail("");
+        } else {
+          alert("Apologies! Please try again.");
+        }
+      })
+      .catch((err) => {
+        setLoading(false);
+        alert("Ooops! Unfortunately, some error has occurred.");
       });
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-
-      const data = await response.json();
-      console.log(data);
-
-      setLoading(false);
-
-      if (data) {
-        alert(
-          `Thank you for your interest ${name}! We will get back to you soon!`
-        );
-        setName("");
-        setEmail("");
-      } else {
-        alert("Apologies! Please try again.");
-      }
-    } catch (err) {
-      setLoading(false);
-      alert("Ooops! Unfortunately, some error has occurred.");
-    }
-
     return true;
   };
 
@@ -77,7 +72,7 @@ export default function Home() {
             autoComplete="name"
             required
             value={name}
-            className="rounded-md bg-white/5 px-3.5 py-2.5 text-black ring-1 ring-inset focus:ring-blue-600 text-sm md:w-96"
+            className="rounded-md bg-white/5 px-3.5 py-2.5 text-white ring-1 ring-inset focus:ring-blue-600 text-sm md:w-96"
             placeholder="Name"
             onChange={(e) => setName(e.target.value)}
           />
@@ -91,7 +86,7 @@ export default function Home() {
             autoComplete="email"
             required
             value={email}
-            className="rounded-md bg-white/5 px-3.5 py-2.5 text-black ring-1 ring-inset focus:ring-blue-600 text-sm md:w-96"
+            className="rounded-md bg-white/5 px-3.5 py-2.5 text-white ring-1 ring-inset focus:ring-blue-600 text-sm md:w-96"
             placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
           />
