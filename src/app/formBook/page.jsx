@@ -18,40 +18,38 @@ export default function Home() {
       return false;
     }
 
-    localStorage.setItem("name", name);
-    localStorage.setItem("email", email);
-
-    await fetch("/api/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setLoading(false);
-        if (data && data.id) {
-          alert(
-            `Thank you for your interest ${name}! We will get back to you soon!`
-          );
-          setName("");
-          setEmail("");
-        } else {
-          alert("Apologies! Please try again.");
-        }
+    try {
+      await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email }),
       })
-      .catch((err) => {
-        setLoading(false);
-        alert("Ooops! Unfortunately, some error has occurred.");
-      });
+        .then((res) => res.json())
+        .then((data) => {
+          setLoading(false);
+          if (data) {
+            alert(
+              `Thank you for your interest ${name}! We will get back to you soon!`
+            );
+            setName("");
+            setEmail("");
+          } else {
+            alert("Apologies! Please try again.");
+          }
+        });
+    } catch (error) {
+      setLoading(false);
+      alert("Ooops! Unfortunately, some error has occurred.");
+    }
     return true;
   };
 
   return (
     <main className={`flex flex-col items-center p-24 min-h-screen`}>
       <Head>
-        <title>Contact Me | Coffeed</title>
+        <title>Contact Me </title>
       </Head>
 
       <div className="relative flex flex-col gap-4 ">
@@ -72,7 +70,7 @@ export default function Home() {
             autoComplete="name"
             required
             value={name}
-            className="rounded-md bg-white/5 px-3.5 py-2.5 text-white ring-1 ring-inset focus:ring-blue-600 text-sm md:w-96"
+            className="rounded-md bg-white/5 px-3.5 py-2.5 text-black ring-1 ring-inset focus:ring-blue-600 text-sm md:w-96"
             placeholder="Name"
             onChange={(e) => setName(e.target.value)}
           />
@@ -86,7 +84,7 @@ export default function Home() {
             autoComplete="email"
             required
             value={email}
-            className="rounded-md bg-white/5 px-3.5 py-2.5 text-white ring-1 ring-inset focus:ring-blue-600 text-sm md:w-96"
+            className="rounded-md bg-white/5 px-3.5 py-2.5 text-black ring-1 ring-inset focus:ring-blue-600 text-sm md:w-96"
             placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
           />
