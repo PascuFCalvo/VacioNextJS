@@ -67,7 +67,7 @@ const Navbar = () => {
             isNavbarOpen ? "flex" : "hidden"
           } flex-col lg:flex-row`}
         >
-          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
+          <a href="#muerte" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             DOCUMENTAL
           </a>
           <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
@@ -76,7 +76,7 @@ const Navbar = () => {
           <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             FAMILIA
           </a>
-          <a href="#" className="text-s   mb-2 lg:mb-0">
+          <a href="#contacto" className="text-s   mb-2 lg:mb-0">
             CONTACTO
           </a>
 
