@@ -1,5 +1,4 @@
 import {
-  Facebook,
   Instagram,
   LinkedIn,
   MusicNote,
@@ -9,10 +8,7 @@ import {
 
 export default function Contact() {
   return (
-    <div
-      id="contacto"
-      className="text-white mt-10 pb-10 w-full text-center  ml-10"
-    >
+    <div id="contacto" className="text-white mt-10 pb-10 w-full text-center  ">
       <h1 className="m-2 font-black">Si quieres contactar conmigo:</h1>
       <h1 className="m-2">soy@juanvacio.com</h1>
       <h1 className="m-2">juan.dual.mateo@gmail.com</h1>

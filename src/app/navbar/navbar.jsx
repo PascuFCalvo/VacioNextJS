@@ -41,22 +41,37 @@ const Navbar = () => {
             isNavbarOpen ? "flex" : "hidden"
           } flex-col lg:flex-row`}
         >
-          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
+          <a
+            href="#quienEsJuanDual"
+            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            onClick={closeNavbar}
+          >
             ¿Quien es Juan?
           </a>
-          <a href="/formBook" className="text-s   mb-2 lg:mb-0 lg:mr-4">
+          <a
+            href="/formBook"
+            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            onClick={closeNavbar}
+          >
             LIBRO
           </a>
           <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             RETOS
           </a>
-          <a href="#" className="text-s hover:cursor-pointer  mb-2 lg:mb-0">
+          <a
+            href="#"
+            className="text-s hover:cursor-pointer  mb-2 lg:mb-0"
+            onClick={closeNavbar}
+          >
             CHARLAS
           </a>
         </div>
 
         {/* "JUAN VACIO" - oculto en dispositivos móviles */}
-        <div className={`mb-2 lg:mb-0 ${isNavbarOpen ? "hidden" : "block"}`}>
+        <div
+          className={`mb-2 lg:mb-0 ${isNavbarOpen ? "hidden" : "block"}`}
+          onClick={closeNavbar}
+        >
           <a href="/" className="text-3xl  ">
             JUAN VACIO
           </a>
@@ -67,16 +82,32 @@ const Navbar = () => {
             isNavbarOpen ? "flex" : "hidden"
           } flex-col lg:flex-row`}
         >
-          <a href="#muerte" className="text-s   mb-2 lg:mb-0 lg:mr-4">
+          <a
+            href="#muerte"
+            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            onClick={closeNavbar}
+          >
             DOCUMENTAL
           </a>
-          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
+          <a
+            href="#"
+            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            onClick={closeNavbar}
+          >
             MOTIVANDO
           </a>
-          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
+          <a
+            href="#"
+            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            onClick={closeNavbar}
+          >
             FAMILIA
           </a>
-          <a href="#contacto" className="text-s   mb-2 lg:mb-0">
+          <a
+            href="#contacto"
+            className="text-s   mb-2 lg:mb-0"
+            onClick={closeNavbar}
+          >
             CONTACTO
           </a>
 

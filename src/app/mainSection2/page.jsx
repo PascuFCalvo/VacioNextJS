@@ -66,8 +66,11 @@ export default function MainPage2() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-[550px]  bg-amber-50 flex flex-col items-center justify-center pl-10 pr-10">
-          <h1 className="text-m md:text-m lg:text-xl text-neutral-900 p-2 md:p-2 lg:p-2">
+        <div
+          id="quienEsJuanDual"
+          className="relative w-full h-[550px]  bg-amber-50 flex flex-col items-center justify-center pl-10 pr-10"
+        >
+          <h1 className="max-w-[700px] first:text-m md:text-m lg:text-xl text-neutral-900 p-2 md:p-2 lg:p-2">
             <Image
               src="/../../../assets/libro-juan-dual.png"
               alt="cara"
@@ -75,31 +78,37 @@ export default function MainPage2() {
               height={500}
               className="opacity-20 absolute  h-full w-auto top-0 right-0  z-0 "
             ></Image>
-            Soy Juan y ¡Estoy Vacio por dentro!<br></br>
-            Me han quitado lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-            <br></br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Soy Juan y ¡Estoy Vacio por
-            dentro!<br></br>
-            Me han quitado lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-            <br></br>
+            <p className="mb-2">¡Hola! Soy Juan y ¡estoy Vacío por dentro!</p>
+
+            <p className="mb-2">
+              Así, como lees. Me han quitado, a lo largo de los años, el
+              estómago, el colon, el recto y la vesícula biliar.
+            </p>
+
+            <p className="mb-2">
+              Casi me muero en varias ocasiones por complicaciones en las
+              cirugías pero, a pesar de todo, he ido sobreviviendo y adivina
+              qué: gracias al deporte de ultra distancia me siento más vivo que
+              nunca.
+            </p>
+
+            <p className="mb-2">Acompañame a mis saraos y te cuento mas!</p>
           </h1>
-          <button className=" text-3xl bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-4 px-6 border  rounded mt-10  z-10">
-            CONOCE MI HISTORIA
-          </button>
+          <a href="pages/about">
+            <button className=" text-3xl bg-teal-500 hover:bg-teal-500 text-white font-bold py-4 px-6 border  rounded mt-10  z-10">
+              CONOCE MI HISTORIA
+            </button>
+          </a>
         </div>
       </div>
       <Link
         id="section1"
         href="./formBook/"
-        className="relateive bg-emerald-400 w-screen flex flex-col md:flex-row justify-around  items-center z-50"
+        className="relateive bg-teal-500 hover:bg-teal-300 w-screen flex flex-col md:flex-row justify-around  items-center z-50 hover:text-black text-amber-50"
       >
         <p
           href="./formBook/"
-          className="mt-10 text-amber-50 text-4xl md:text-6xl md:mt-0 font-bold hover:text-black hover:cursor-pointer"
+          className="ml-4 mt-10  text-4xl md:text-6xl md:mt-0 font-bold  hover:cursor-pointer"
         >
           HAZTE CON MI LIBRO
         </p>

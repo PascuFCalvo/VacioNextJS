@@ -52,7 +52,7 @@ export default function Home() {
     <div>
       <Navbar></Navbar>
       <NavbarAside></NavbarAside>
-      <div className="bg-emerald-400 w-full flex flex-col justify-center items-center content-center">
+      <div className="bg-teal-500 w-full flex flex-col justify-center items-center content-center">
         <main
           className={`flex flex-col items-center md:w-1/2 w-4/5 min-h-screen `}
         >
@@ -82,7 +82,7 @@ export default function Home() {
                 autoComplete="name"
                 required
                 value={name}
-                className="rounded-md bg-emerald-200 px-3.5 py-2.5 text-black    text-sm "
+                className="rounded-md bg-teal-200 px-3.5 py-2.5 text-black    text-sm "
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
               />
@@ -96,7 +96,7 @@ export default function Home() {
                 autoComplete="email"
                 required
                 value={email}
-                className="rounded-md bg-emerald-200 px-3.5 py-2.5 text-black   text-sm "
+                className="rounded-md bg-teal-200 px-3.5 py-2.5 text-black   text-sm "
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -107,7 +107,7 @@ export default function Home() {
                 autoComplete="message"
                 required
                 value={message}
-                className="rounded-md bg-emerald-200 px-3.5 py-2.5 text-black   text-sm "
+                className="rounded-md bg-teal-200 px-3.5 py-2.5 text-black   text-sm "
                 placeholder="Tu mensaje, dedicatoria, lo que quieras!"
                 onChange={(e) => setMessage(e.target.value)}
               />
