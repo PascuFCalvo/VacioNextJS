@@ -1,6 +1,6 @@
 "use client";
 
-import Gallery from "./galeria/Gallery";
+import Gallery from "./galeria/gallery";
 import MainPage from "./mainSection/page";
 import MainPage2 from "./mainSection2/page";
 import MainPage3 from "./mainSection3/page";

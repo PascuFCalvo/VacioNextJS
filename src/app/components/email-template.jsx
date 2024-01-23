@@ -1,14 +1,14 @@
-export const EmailTemplate = ({ name, email }) => (
+export const EmailTemplate = ({ name, email, message }) => (
   <div>
-    <p>Hello Kavya,</p>
+    <p>Hola JUAN!</p>
     <p>
-      {name} has submitted the contact form on your website. Their email is{" "}
-      {email}!
+      Soy {name} y este es mi email {email}!
     </p>
+    <p>{message}</p>
     <p>
-      Regards,
+      Un saludo,
       <br />
-      Coffee
+      🚲🚲🚲
     </p>
   </div>
 );

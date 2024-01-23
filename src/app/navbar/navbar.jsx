@@ -11,7 +11,6 @@ const Navbar = () => {
 
   return (
     <div>
-      {/* Botón hamburguesa para dispositivos móviles */}
       <button
         className="block lg:hidden"
         onClick={() => setNavbarOpen(!isNavbarOpen)}
@@ -42,23 +41,23 @@ const Navbar = () => {
             isNavbarOpen ? "flex" : "hidden"
           } flex-col lg:flex-row`}
         >
-          <a href="#" className="text-lg   mb-2 lg:mb-0 lg:mr-4">
+          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             ¿Quien es Juan?
           </a>
-          <a href="#" className="text-lg   mb-2 lg:mb-0 lg:mr-4">
+          <a href="/formBook" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             LIBRO
           </a>
-          <a href="#" className="text-lg   mb-2 lg:mb-0 lg:mr-4">
+          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             RETOS
           </a>
-          <a href="#" className="text-lg   mb-2 lg:mb-0">
+          <a href="#" className="text-s hover:cursor-pointer  mb-2 lg:mb-0">
             CHARLAS
           </a>
         </div>
 
         {/* "JUAN VACIO" - oculto en dispositivos móviles */}
         <div className={`mb-2 lg:mb-0 ${isNavbarOpen ? "hidden" : "block"}`}>
-          <a href="#" className="text-4xl  ">
+          <a href="/" className="text-3xl  ">
             JUAN VACIO
           </a>
         </div>
@@ -68,16 +67,16 @@ const Navbar = () => {
             isNavbarOpen ? "flex" : "hidden"
           } flex-col lg:flex-row`}
         >
-          <a href="#" className="text-lg   mb-2 lg:mb-0 lg:mr-4">
+          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             DOCUMENTAL
           </a>
-          <a href="#" className="text-lg   mb-2 lg:mb-0 lg:mr-4">
+          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             MOTIVANDO
           </a>
-          <a href="#" className="text-lg   mb-2 lg:mb-0 lg:mr-4">
+          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
             FAMILIA
           </a>
-          <a href="#" className="text-lg   mb-2 lg:mb-0">
+          <a href="#" className="text-s   mb-2 lg:mb-0">
             CONTACTO
           </a>
 

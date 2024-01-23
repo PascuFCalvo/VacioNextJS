@@ -15,29 +15,30 @@ export default function MainPage2() {
   return (
     <>
       <div className="w-screen flex flex-col justify-center items-center p-6 bg-neutral-900 text-white">
-        <h2 className="text-2xl">
+        <h2 className="text-2xl text-center mt-10 pl-5 pr-5">
           SIN ESTOMAGO, SIN COLON, SIN RECTO, SIN VESICULA, CASI MUERO 3 VECES
           PORQUE ESTOY{" "}
         </h2>
         <h1 className="text-6xl mt-4 mb-4">VACIO</h1>
-        <h2 className="text-2xl">
-          GRACIAS AL DEPORTE DE ULTRA DISTANCIA ME SIEMTO MAS VIVO QUE NUNCA
+        <h2 className="text-2xl text-center mb-10 pl-5 pr-5">
+          GRACIAS AL DEPORTE DE ULTRA DISTANCIA ME SIENTO MAS VIVO QUE NUNCA
         </h2>
       </div>
-      <div className="w-screen flex flex-col md:flex-row">
-        <div className=" bg-cover bg-center h-full w-1/3 min-w-96 ">
-          <div className="relative h-full min-w-600 flex ">
+      <div className=" w-screen flex flex-col justify-center items-center lg:flex-row lg:mb-0 ">
+        <div className=" max-w-[440px]">
+          <div className="relative h-full min-w-600 flex mb-10 lg:mb-0">
             <Link href="https://www.instagram.com/dualcillo/" target="_blank">
-              <Image
-                src="/../../../assets/retrato.jpg"
-                alt="cara"
-                width={1066}
-                height={1332}
-                className="min-w-full"
-              />
+              <div className="flex flex-row">
+                <Image
+                  src="/../../../assets/retrato.jpg"
+                  alt="cara"
+                  width={1066}
+                  height={1332}
+                />
+              </div>
             </Link>
 
-            <div className="absolute bottom-0 w-full bg-transparent-app flex flex-row items-center justify-evenly pb-5 pt-5 bg-slate-50/20">
+            <div className="absolute bottom-0 w-full bg-transparent-app flex flex-row items-center justify-evenly pb-5 pt-5 bg-neutral-50/20">
               <Link href="https://www.instagram.com/dualcillo/" target="_blank">
                 <Instagram className="social-icon text-5xl text-white" />
               </Link>
@@ -65,8 +66,8 @@ export default function MainPage2() {
             </div>
           </div>
         </div>
-        <div className="relative w-full  bg-amber-50 flex flex-col items-center justify-center p-10">
-          <h1 className="text-m md:text-xl lg:text-2xl text-neutral-900 p-2 md:p-2 lg:p-2">
+        <div className="relative w-full h-[550px]  bg-amber-50 flex flex-col items-center justify-center pl-10 pr-10">
+          <h1 className="text-m md:text-m lg:text-xl text-neutral-900 p-2 md:p-2 lg:p-2">
             <Image
               src="/../../../assets/libro-juan-dual.png"
               alt="cara"
@@ -92,12 +93,13 @@ export default function MainPage2() {
         </div>
       </div>
       <Link
+        id="section1"
         href="./formBook/"
         className="relateive bg-emerald-400 w-screen flex flex-col md:flex-row justify-around  items-center z-50"
       >
         <p
           href="./formBook/"
-          className="text-amber-50 text-4xl md:text-6xl  font-bold hover:text-black hover:cursor-pointer"
+          className="mt-10 text-amber-50 text-4xl md:text-6xl md:mt-0 font-bold hover:text-black hover:cursor-pointer"
         >
           HAZTE CON MI LIBRO
         </p>
