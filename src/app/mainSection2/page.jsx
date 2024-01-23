@@ -72,7 +72,7 @@ export default function MainPage2() {
               alt="cara"
               width={500}
               height={500}
-              className="opacity-20 absolute top-0 right-0 mt-10 "
+              className="opacity-20 absolute  h-full w-auto top-0 right-0  z-0 "
             ></Image>
             Soy Juan y ¡Estoy Vacio por dentro!<br></br>
             Me han quitado lorem ipsum dolor sit amet consectetur adipisicing
@@ -91,13 +91,16 @@ export default function MainPage2() {
           </button>
         </div>
       </div>
-      <div className="relateive bg-emerald-400 w-screen flex flex-col md:flex-row justify-around  items-center">
-        <Link
+      <Link
+        href="./formBook/"
+        className="relateive bg-emerald-400 w-screen flex flex-col md:flex-row justify-around  items-center z-50"
+      >
+        <p
           href="./formBook/"
           className="text-amber-50 text-4xl md:text-6xl  font-bold hover:text-black hover:cursor-pointer"
         >
           HAZTE CON MI LIBRO
-        </Link>
+        </p>
         <Image
           src="/../../../assets/portada-libro.jpg"
           alt="cara"
@@ -105,7 +108,7 @@ export default function MainPage2() {
           height={1332}
           className="w-96 mt-10 mb-10"
         />
-      </div>
+      </Link>
     </>
   );
 }
