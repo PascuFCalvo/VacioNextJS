@@ -16,7 +16,7 @@ const Navbar = () => {
         onClick={() => setNavbarOpen(!isNavbarOpen)}
       >
         <div
-          className={`flex items-center border-solid border-2 border-white fixed m-5 z-50 h-12 w-12 bg-transparent ${
+          className={`flex items-center border-xsolid border-2 border-white fixed m-5 z-50 h-12 w-12 bg-transparent ${
             isNavbarOpen ? "hidden" : "block"
           }`}
         >
@@ -32,7 +32,7 @@ const Navbar = () => {
 
       {/* Navbar */}
       <nav
-        className={`fixed flex flex-col lg:flex-row lg:text-left lg:justify-evenly py-4 px-6 bg-neutral-800 shadow lg:items-baseline w-full text-white z-50 ${
+        className={`fixed flex flex-col lg:flex-row lg:text-left lg:justify-evenly py-8 px-6 bg-neutral-800 shadow lg:items-baseline w-full text-white z-50 ${
           isNavbarOpen ? "block" : "hidden"
         } lg:flex`}
       >
@@ -43,24 +43,24 @@ const Navbar = () => {
         >
           <a
             href="#quienEsJuanDual"
-            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            className="text-xs   mb-2 lg:mb-0 lg:mr-8"
             onClick={closeNavbar}
           >
             ¿Quien es Juan?
           </a>
           <a
             href="/formBook"
-            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            className="text-xs   mb-2 lg:mb-0 lg:mr-8"
             onClick={closeNavbar}
           >
             LIBRO
           </a>
-          <a href="#" className="text-s   mb-2 lg:mb-0 lg:mr-4">
+          <a href="#" className="text-xs   mb-2 lg:mb-0 lg:mr-8">
             RETOS
           </a>
           <a
             href="#"
-            className="text-s hover:cursor-pointer  mb-2 lg:mb-0"
+            className="text-xs hover:cursor-pointer  mb-2 lg:mb-0"
             onClick={closeNavbar}
           >
             CHARLAS
@@ -72,7 +72,7 @@ const Navbar = () => {
           className={`mb-2 lg:mb-0 ${isNavbarOpen ? "hidden" : "block"}`}
           onClick={closeNavbar}
         >
-          <a href="/" className="text-3xl  ">
+          <a href="/" className="text-2xl  ">
             JUAN VACIO
           </a>
         </div>
@@ -84,28 +84,28 @@ const Navbar = () => {
         >
           <a
             href="#muerte"
-            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            className="text-xs   mb-2 lg:mb-0 lg:mr-8"
             onClick={closeNavbar}
           >
             DOCUMENTAL
           </a>
           <a
             href="#"
-            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            className="text-xs   mb-2 lg:mb-0 lg:mr-8"
             onClick={closeNavbar}
           >
             MOTIVANDO
           </a>
           <a
             href="#"
-            className="text-s   mb-2 lg:mb-0 lg:mr-4"
+            className="text-xs   mb-2 lg:mb-0 lg:mr-8"
             onClick={closeNavbar}
           >
             FAMILIA
           </a>
           <a
             href="#contacto"
-            className="text-s   mb-2 lg:mb-0"
+            className="text-xs   mb-2 lg:mb-0"
             onClick={closeNavbar}
           >
             CONTACTO
@@ -113,7 +113,7 @@ const Navbar = () => {
 
           {/* Botón para cerrar la hamburguesa - visible solo en móviles */}
           <button
-            className={`text-lg  text-red-500 hover:text-red-700 mt-4 lg:hidden`}
+            className={`text-lg  text-red-500 hover:text-red-700 mt-8 lg:hidden`}
             onClick={closeNavbar}
           >
             Cerrar

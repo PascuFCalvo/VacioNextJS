@@ -38,7 +38,7 @@ export default function MainPage2() {
               </div>
             </Link>
 
-            <div className="absolute bottom-0 w-full bg-transparent-app flex flex-row items-center justify-evenly pb-5 pt-5 bg-neutral-50/20">
+            <div className="absolute bottom-0 w-full bg-transparent-app flex flex-row items-center justify-evenly pb-5 pt-5 bg-neutral-50/20 z-1">
               <Link href="https://www.instagram.com/dualcillo/" target="_blank">
                 <Instagram className="social-icon text-5xl text-white" />
               </Link>
@@ -95,7 +95,7 @@ export default function MainPage2() {
             <p className="mb-2">Acompañame a mis saraos y te cuento mas!</p>
           </h1>
           <a href="pages/about">
-            <button className=" text-3xl bg-teal-500 hover:bg-teal-500 text-white font-bold py-4 px-6 border  rounded mt-10  z-10">
+            <button className=" text-3xl bg-teal-500 hover:bg-teal-300 text-white font-bold py-4 px-6 border  rounded mt-10  z-10 hover:text-black z">
               CONOCE MI HISTORIA
             </button>
           </a>
