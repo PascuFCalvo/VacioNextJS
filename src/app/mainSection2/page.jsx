@@ -125,6 +125,7 @@ export default function MainPage2() {
             </button>
           </a>
         </section>
+        {/* comentario para hacer commit y pushear */}
 
         <Image
           src={portada}
