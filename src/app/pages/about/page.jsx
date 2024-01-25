@@ -12,11 +12,12 @@ import contar from "../../../../public/assets/historia.png";
 import cortada from "../../../../public/assets/juan-cortada.png";
 import MotivationGallery from "@/app/components/motivation-gallery";
 import Contact from "../contact/page";
+import MiniNavbar from "@/app/navbar/miniNavbar";
 
 export default function About() {
   return (
     <div className="w-screen flex-col bg-amber-50 ">
-      <Navbar />
+      <MiniNavbar />
       <NavbarAside />
       <div className=" w-full flex flex-col content-center justify-center items-center">
         <div className="mt-40  w-screen flex flex-col justify-center items-center content-center md:flex-row-reverse  md:justify-evenly ">

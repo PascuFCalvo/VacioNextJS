@@ -76,9 +76,10 @@ export default function MainPage2() {
               alt="cara"
               width={500}
               height={500}
+              id="juan"
               className=" opacity-20 absolute  h-full w-auto top-0 right-0  z-0 "
             ></Image>
-            <p className="mt-10 mb-2">
+            <p className=" mt-10 mb-2">
               ¡Hola! Soy Juan y ¡estoy Vacío por dentro!
             </p>
 
@@ -104,7 +105,7 @@ export default function MainPage2() {
         </div>
       </div>
       <Link
-        id="section1"
+        id="libro"
         href="./formBook/"
         className="relateive bg-teal-500 hover:bg-teal-300 w-screen flex flex-col md:flex-row justify-around  items-center z-50 hover:text-neutral-900 text-amber-50"
       >

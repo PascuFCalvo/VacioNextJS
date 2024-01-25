@@ -9,6 +9,7 @@ export default function MainPage3() {
           alt="cara"
           layout="fill"
           objectFit="cover"
+          id="retos"
         />
         <div className="absolute right-0 inset-0 w-screen flex flex-col items-end justify-center text-white pr-10 mr">
           <h1 className="lg:text-3xl text-center w-2/3 font-bold mr-10">

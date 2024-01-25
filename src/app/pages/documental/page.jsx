@@ -4,57 +4,19 @@ import { useState } from "react";
 import juandocu from "../../../../public/assets/dual-docuemntal.png";
 import gorkadocu from "../../../../public/assets/gorka-documental.png";
 import edudocu from "../../../../public/assets/eduardo-documental.png";
-import Navbar from "../../navbar/navbar";
+
 import Image from "next/image";
 import NavbarAside from "../../navbarAside/navbarAside";
 import YoutubeEmbed from "@/app/components/YoutubeEmbed";
 import { Instagram, LinkedIn } from "@mui/icons-material";
+import MiniNavbar from "@/app/navbar/miniNavbar";
 
 export default function Home() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e) => {
-    setLoading(true);
-    e.preventDefault();
-
-    if (name === "" || email === "") {
-      setLoading(false);
-      alert("Please enter both name & email id");
-      return false;
-    }
-
-    try {
-      await fetch("/api/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, message }),
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          setLoading(false);
-          if (data) {
-            alert(`Gracias por tu interes ${name}! Enseguida te contesto!`);
-            setName("");
-            setEmail("");
-          } else {
-            alert("Lo siento! Intenta otra vez.");
-          }
-        });
-    } catch (error) {
-      setLoading(false);
-      alert("Ooops! Algo raro a pasado, intenta otra vez.");
-    }
-    return true;
-  };
+  const [grayscale, setGrayscale] = useState(true);
 
   return (
     <div>
-      <Navbar></Navbar>
+      <MiniNavbar></MiniNavbar>
       <NavbarAside></NavbarAside>
       <div className="bg-neutral-800 w-full flex flex-col justify-center items-center content-center">
         <div className=" mt-40 bg-neutral-800 w-4/5 h-[300px] flex flex-col  justify-center items-center content-center ">
@@ -74,7 +36,8 @@ export default function Home() {
             esencialmente igual al original. Fue
           </p>
         </div>
-        <div className="w-full bg-neutral-900 flex flex-col justify-center items-center py-5">
+
+        <div className="w-full bg-neutral-900 flex flex-col justify-center items-center py-5 ">
           <YoutubeEmbed className="max-w-5/6 " embedId="ZRS0hYmDy4k" />
         </div>
         <div className=" mt-40 bg-neutral-800 w-full  flex flex-col  justify-center items-center content-center ">
@@ -91,7 +54,7 @@ export default function Home() {
                 className="w-96 h-96 object-cover"
               />
               <p className="text-xl font-bold text-center"> JUAN DUAL</p>
-              <p>Superviviente protagonista y poco mas</p>
+              <p className="h-14">Superviviente protagonista y poco mas</p>
               <div className="mb-10">
                 <LinkedIn />
                 <Instagram />
@@ -104,7 +67,7 @@ export default function Home() {
                 className="w-96 h-96 object-cover"
               />
               <p className="text-xl font-bold text-center">EDUARDO PÈLACH</p>
-              <p>Camara y todo lo que tenga que ser</p>
+              <p className="h-14">Camara y todo lo que tenga que ser</p>
               <div className="mb-10">
                 <LinkedIn />
                 <Instagram />
@@ -117,7 +80,7 @@ export default function Home() {
                 className="w-96 h-96 object-cover"
               />
               <p className="text-xl font-bold text-center">GORKA MARTINEZ</p>
-              <p>Camara y todo lo que tenga que ser</p>
+              <p className="h-14">Camara y todo lo que tenga que ser</p>
               <div className="mb-10">
                 <LinkedIn />
                 <Instagram />

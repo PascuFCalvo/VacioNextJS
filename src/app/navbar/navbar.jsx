@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowBack, PlayArrow } from "@mui/icons-material";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -42,21 +44,21 @@ const Navbar = () => {
           } flex-col lg:flex-row`}
         >
           <a
-            href="/pages/about"
+            href="#juan"
             className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
             ¿Quien es Juan?
           </a>
           <a
-            href="/formBook"
+            href="#libro"
             className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
             LIBRO
           </a>
           <a
-            href="#"
+            href="#retos"
             className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
           >
             RETOS
@@ -92,13 +94,7 @@ const Navbar = () => {
           >
             DOCUMENTAL
           </a>
-          <a
-            href="#"
-            className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
-            onClick={closeNavbar}
-          >
-            MOTIVANDO
-          </a>
+
           <a
             href="#"
             className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
