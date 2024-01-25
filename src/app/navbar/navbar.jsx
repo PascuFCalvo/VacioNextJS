@@ -3,6 +3,7 @@
 import { ArrowBack, PlayArrow } from "@mui/icons-material";
 import Image from "next/image";
 import React, { useState } from "react";
+import tripa from "../../../public/assets/tripa.png";
 
 const Navbar = () => {
   const [isNavbarOpen, setNavbarOpen] = useState(false);
@@ -22,12 +23,7 @@ const Navbar = () => {
             isNavbarOpen ? "hidden" : "block"
           }`}
         >
-          <Image
-            src="/../../../assets/tripa.png"
-            alt="hamburguesa"
-            width={100}
-            height={100}
-          />
+          <Image src={tripa} alt="hamburguesa" width={100} height={100} />
           <PlayArrow className="text-white text-4xl"></PlayArrow>
         </div>
       </button>

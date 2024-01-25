@@ -12,8 +12,6 @@ import { Instagram, LinkedIn } from "@mui/icons-material";
 import MiniNavbar from "@/app/navbar/miniNavbar";
 
 export default function Home() {
-  const [grayscale, setGrayscale] = useState(true);
-
   return (
     <div>
       <MiniNavbar></MiniNavbar>
@@ -23,7 +21,7 @@ export default function Home() {
           <div className="  left-0 flex justify-center mb-[-150px] w-5/6 md:w-1/2"></div>
 
           <h1 className="text-4xl text-center text-amber-50 font-bold mb-10">
-            VACIO
+            LA MUERTE DE JUAN
           </h1>
           <p className="text-amber-50">
             Lorem Ipsum es simplemente el texto de relleno de las imprentas y
@@ -43,7 +41,7 @@ export default function Home() {
         <div className=" mt-40 bg-neutral-800 w-full  flex flex-col  justify-center items-center content-center ">
           <div className="  left-0 flex justify-center mb-[-150px] w-full md:w-1/2"></div>
 
-          <h1 className="text-4xl text-center text-amber-50 font-bold mb-10">
+          <h1 className="text-4xl text-center text-amber-50 font-bold pt-10 mb-10">
             ¿QUIENES HACEMOS ESTE PROYECTO?
           </h1>
           <div className=" flex flex-col items-center md:flex-row w-5/6 justify-between">
