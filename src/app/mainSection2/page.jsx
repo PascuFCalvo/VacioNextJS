@@ -104,7 +104,7 @@ export default function MainPage2() {
       <div
         id="libro"
         href="./formBook/"
-        className="bg-gradient-to-r from-neutral-800 to-neutral-600 w-screen flex flex-col items-center content-center justify-center w-full
+        className="bg-gradient-to-r from-neutral-800 to-neutral-600 w-screen flex flex-col items-center content-center justify-center 
          md:flex-row md:justify-around   z-50  text-amber-50"
       >
         <section className="ml-10 mr-20 max-w-[500px]">
