@@ -9,7 +9,9 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import "./transition.css";
-import { Button } from "@mui/material";
+import retrato from "../../../public/assets/retrato.jpg";
+import libro from "../../../public/assets/libro-juan-dual.png";
+import portada from "../../../public/assets/portada-libro.jpg";
 
 export default function MainPage2() {
   return (
@@ -29,12 +31,7 @@ export default function MainPage2() {
           <div className="mb-0 relative h-full min-w-600 flex ">
             <Link href="https://www.instagram.com/dualcillo/" target="_blank">
               <div className="flex flex-row">
-                <Image
-                  src="/../../../assets/retrato.jpg"
-                  alt="cara"
-                  width={1066}
-                  height={1332}
-                />
+                <Image src={retrato} alt="cara" width={1066} height={1332} />
               </div>
             </Link>
 
@@ -72,7 +69,7 @@ export default function MainPage2() {
         >
           <h1 className="max-w-[700px] first:text-m md:text-m lg:text-xl text-neutral-900 p-2 md:p-2 lg:p-2">
             <Image
-              src="/../../../assets/libro-juan-dual.png"
+              src={libro}
               alt="cara"
               width={500}
               height={500}
@@ -116,7 +113,7 @@ export default function MainPage2() {
           HAZTE CON MI LIBRO
         </p>
         <Image
-          src="/../../../assets/portada-libro.jpg"
+          src={portada}
           alt="cara"
           width={1066}
           height={1332}
