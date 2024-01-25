@@ -1,11 +1,12 @@
 import Image from "next/image";
+import yisus from "../../../public/assets/yisus2.jpg";
 
 export default function MainPage3() {
   return (
     <>
       <section className="bg-cover bg-center min-h-96 relative w-screen min-h-500 overflow-hidden">
         <Image
-          src="/../../../assets/yisus2.jpg"
+          src={yisus}
           alt="cara"
           layout="fill"
           objectFit="cover"
