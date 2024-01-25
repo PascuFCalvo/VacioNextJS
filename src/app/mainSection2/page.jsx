@@ -101,12 +101,13 @@ export default function MainPage2() {
           </a>
         </div>
       </div>
-      <a
+      <div
         id="libro"
         href="./formBook/"
-        className="relateive bg-gradient-to-r from-neutral-800 to-neutral-600 w-screen flex flex-col md:flex-row justify-around  items-center z-50  text-amber-50"
+        className="bg-gradient-to-r from-neutral-800 to-neutral-600 w-screen flex flex-col items-center content-center justify-center w-full
+         md:flex-row md:justify-around   z-50  text-amber-50"
       >
-        <div className="ml-10 mr-20 max-w-[500px]">
+        <section className="ml-10 mr-20 max-w-[500px]">
           <p
             href="./formBook/"
             className="mt-10 mb-10  text-2xl md:text-2xl md:mt-0 font-bold  hover:cursor-pointer"
@@ -123,7 +124,7 @@ export default function MainPage2() {
               CONSIGUELO AQUI
             </button>
           </a>
-        </div>
+        </section>
 
         <Image
           src={portada}
@@ -132,7 +133,7 @@ export default function MainPage2() {
           height={1332}
           className="w-[500px]  mb-10 mt-10"
         />
-      </a>
+      </div>
     </>
   );
 }
