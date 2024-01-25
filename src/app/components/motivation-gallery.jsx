@@ -12,7 +12,7 @@ import sonreir from "../../../public/assets/sonreir.jpg";
 import glaciar from "../../../public/assets/glaciar.jpg";
 
 // import required modules
-import { Parallax, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Parallax, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
 export default function MotivationGallery() {
@@ -29,28 +29,37 @@ export default function MotivationGallery() {
           clickable: true,
         }}
         navigation={true}
-        modules={[Parallax, Pagination, Navigation]}
-        className="mySwiper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        modules={[Autoplay, Parallax, Pagination, Navigation]}
+        className="mySwiper h-[600px] w-screen "
       >
         <div
           slot="container-start"
           className="parallax-bg"
           data-swiper-parallax="-23%"
         ></div>
-        <SwiperSlide className="relative">
-          <Image src={maraton} alt="maraton" height={600} width={1000} />
-          <div
-            className="absolute text-center bottom-[176px] p-2 text-2xl font-black text-white w-full bg-neutral-800/20"
-            data-swiper-parallax="-300"
-          >
-            TERMINAR UN MARATON 
-          </div>
+        <SwiperSlide>
+          <Image
+            src={maraton}
+            alt="maraton"
+            className="min-h-full overflow-hidden object-cover "
+          />
 
           <div
-            className="absolute bottom-0 left-0 text-white p-10 text bg-neutral-800/20"
+            className="w-full absolute bottom-0 left-0 text-white py-4 px-10 text bg-neutral-800/20"
             data-swiper-parallax="-100"
           >
-            <p>
+            <div
+              className=" text-center bottom-[176px]  text-2xl font-neutral-900 text-white w-full"
+              data-swiper-parallax="-300"
+            >
+              TERMINAR UN MARATON
+            </div>
+            <p className="hidden md:block">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
@@ -62,22 +71,23 @@ export default function MotivationGallery() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-            <Image src={sonreir} alt="maraton" />
-            Slide 2
-          </div>
-          <div
-            className="absolute text-center bottom-[176px] p-2 text-2xl font-black text-white w-full bg-neutral-800/20"
-            data-swiper-parallax="-300"
-          >
-            PODER SONREIR A LA MUERTE Y SEGUIR
-          </div>
+          <Image
+            src={sonreir}
+            alt="maraton"
+            className="min-h-full overflow-hidden object-cover"
+          />
 
           <div
-            className="absolute bottom-0 left-0 text-white p-10 text bg-neutral-800/20"
+            className="w-full absolute bottom-0 left-0 text-white py-4 px-10 text bg-neutral-800/20"
             data-swiper-parallax="-100"
           >
-            <p>
+            <div
+              className=" text-center bottom-[176px]  text-2xl font-neutral-900 text-white w-full"
+              data-swiper-parallax="-300"
+            >
+              SONREIR A LA MUERTE
+            </div>
+            <p className="hidden md:block">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
@@ -89,22 +99,23 @@ export default function MotivationGallery() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-            <Image src={glaciar} alt="maraton" />
-            Slide 3
-          </div>
-          <div
-            className="absolute text-center bottom-[176px] p-2 text-2xl font-black text-white w-full bg-neutral-800/20"
-            data-swiper-parallax="-300"
-          >
-            ¿UN ULTRATRAIL POR GLACIARES? POR QUE NO
-          </div>
+          <Image
+            src={glaciar}
+            alt="maraton"
+            className="min-h-full overflow-hidden object-cover"
+          />
 
           <div
-            className="absolute bottom-0 left-0 text-white p-10 text bg-neutral-800/20"
+            className="w-full absolute bottom-0 left-0 text-white py-4 px-10 text bg-neutral-800/20"
             data-swiper-parallax="-100"
           >
-            <p>
+            <div
+              className=" text-center bottom-[176px]  text-2xl font-neutral-900 text-white w-full"
+              data-swiper-parallax="-300"
+            >
+              UN TRAIL ENTRE GLACIARES? WHY NOT
+            </div>
+            <p className="hidden md:block">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.

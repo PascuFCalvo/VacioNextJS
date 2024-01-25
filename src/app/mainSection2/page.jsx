@@ -26,7 +26,7 @@ export default function MainPage2() {
       </div>
       <div className=" w-screen flex flex-col justify-center items-center lg:flex-row lg:mb-0 ">
         <div className=" max-w-[440px]">
-          <div className="relative h-full min-w-600 flex mb-10 lg:mb-0">
+          <div className="mb-0 relative h-full min-w-600 flex ">
             <Link href="https://www.instagram.com/dualcillo/" target="_blank">
               <div className="flex flex-row">
                 <Image
@@ -76,9 +76,11 @@ export default function MainPage2() {
               alt="cara"
               width={500}
               height={500}
-              className="opacity-20 absolute  h-full w-auto top-0 right-0  z-0 "
+              className=" opacity-20 absolute  h-full w-auto top-0 right-0  z-0 "
             ></Image>
-            <p className="mb-2">¡Hola! Soy Juan y ¡estoy Vacío por dentro!</p>
+            <p className="mt-10 mb-2">
+              ¡Hola! Soy Juan y ¡estoy Vacío por dentro!
+            </p>
 
             <p className="mb-2">
               Así, como lees. Me han quitado, a lo largo de los años, el
@@ -94,8 +96,8 @@ export default function MainPage2() {
 
             <p className="mb-2">Acompañame a mis saraos y te cuento mas!</p>
           </h1>
-          <a href="pages/about">
-            <button className=" text-3xl bg-teal-500 hover:bg-teal-300 text-white font-bold py-4 px-6 border  rounded mt-10  z-10 hover:text-black z">
+          <a className="z-10" href="pages/about">
+            <button className=" text-3xl bg-teal-500 hover:bg-teal-300 text-white font-bold py-4 px-6 border  rounded mt-10  z-1 hover:text-neutral-900 mb-10">
               CONOCE MI HISTORIA
             </button>
           </a>
@@ -104,7 +106,7 @@ export default function MainPage2() {
       <Link
         id="section1"
         href="./formBook/"
-        className="relateive bg-teal-500 hover:bg-teal-300 w-screen flex flex-col md:flex-row justify-around  items-center z-50 hover:text-black text-amber-50"
+        className="relateive bg-teal-500 hover:bg-teal-300 w-screen flex flex-col md:flex-row justify-around  items-center z-50 hover:text-neutral-900 text-amber-50"
       >
         <p
           href="./formBook/"

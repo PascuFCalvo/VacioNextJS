@@ -33,8 +33,11 @@ export default function Muerte() {
 
             <p className="text-lg max-w-5/6 px-3 sm:max-w-1/2 sm:px-40 mb-10">
               Decir que el documental está dirigido y rodado por{" "}
-              <span className="text-black font-black">@gkmph </span>y
-              <span className="text-black font-black">@EduardoPelach</span>
+              <span className="text-neutral-900 font-neutral-900">@gkmph </span>
+              y
+              <span className="text-neutral-900 font-neutral-900">
+                @EduardoPelach
+              </span>
             </p>
           </div>
 

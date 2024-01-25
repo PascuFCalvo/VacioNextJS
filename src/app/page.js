@@ -19,7 +19,7 @@ export default function Home() {
         <NavbarAside />
         <Gallery />
         <Contact />
-        <Muerte />
+        {/* <Muerte /> */}
       </main>
     </>
   );
