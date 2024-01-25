@@ -1,5 +1,6 @@
 "use client";
 
+import MotivationGallery from "./components/motivation-gallery";
 import Gallery from "./galeria/gallery";
 import MainPage from "./mainSection/page";
 import MainPage2 from "./mainSection2/page";
@@ -16,6 +17,10 @@ export default function Home() {
         <MainPage />
         <MainPage2 />
         <MainPage3 />
+        <div className="flex flex-col items-center content-center justify-center bg-teal-500 w-screen h-[700px]">
+          <MotivationGallery />
+        </div>
+
         <NavbarAside />
         <Gallery />
         <Contact />

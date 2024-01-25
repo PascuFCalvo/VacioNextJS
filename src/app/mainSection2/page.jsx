@@ -11,7 +11,7 @@ import Link from "next/link";
 import "./transition.css";
 import retrato from "../../../public/assets/retrato.jpg";
 import libro from "../../../public/assets/libro-juan-dual.png";
-import portada from "../../../public/assets/portada-libro.jpg";
+import portada from "../../../public/assets/librogris.png";
 
 export default function MainPage2() {
   return (
@@ -101,25 +101,38 @@ export default function MainPage2() {
           </a>
         </div>
       </div>
-      <Link
+      <a
         id="libro"
         href="./formBook/"
-        className="relateive bg-teal-500 hover:bg-teal-300 w-screen flex flex-col md:flex-row justify-around  items-center z-50 hover:text-neutral-900 text-amber-50"
+        className="relateive bg-gradient-to-r from-neutral-800 to-neutral-600 w-screen flex flex-col md:flex-row justify-around  items-center z-50  text-amber-50"
       >
-        <p
-          href="./formBook/"
-          className="ml-4 mt-10  text-4xl md:text-6xl md:mt-0 font-bold  hover:cursor-pointer"
-        >
-          HAZTE CON MI LIBRO
-        </p>
+        <div className="ml-10 mr-20 max-w-[500px]">
+          <p
+            href="./formBook/"
+            className="mt-10 mb-10  text-2xl md:text-2xl md:mt-0 font-bold  hover:cursor-pointer"
+          >
+            VACIO UN LIBRO QUE INSPIRA
+          </p>
+          <p className="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+          </p>
+          <a className="z-10" href="./formBook/">
+            <button className=" text-3xl bg-teal-500 hover:bg-teal-300 text-white font-bold py-4 px-6   rounded mt-10  z-1 hover:text-neutral-900 mb-10">
+              CONSIGUELO AQUI
+            </button>
+          </a>
+        </div>
+
         <Image
           src={portada}
           alt="cara"
           width={1066}
           height={1332}
-          className="w-96 mt-10 mb-10"
+          className="w-[500px]  mb-10 mt-10"
         />
-      </Link>
+      </a>
     </>
   );
 }

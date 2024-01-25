@@ -1,5 +1,6 @@
 import Image from "next/image";
 import yisus from "../../../public/assets/yisus2.jpg";
+import MotivationGallery from "../components/motivation-gallery";
 
 export default function MainPage3() {
   return (

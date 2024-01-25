@@ -1,14 +1,6 @@
-.html,
-body {
-   background-color: #fffbeb;
-
-}
-
 .swiper {
    border: solid 10px white;
-   margin-top: -200px;
-
-   margin-bottom: 100px;
+   margin-top: 0px;
    max-width: 1000px;
 
 }

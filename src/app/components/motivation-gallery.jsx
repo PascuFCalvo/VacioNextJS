@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +10,6 @@ import maraton from "../../../public/assets/maraton.jpg";
 import sonreir from "../../../public/assets/sonreir.jpg";
 import glaciar from "../../../public/assets/glaciar.jpg";
 
-// import required modules
 import { Autoplay, Parallax, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
