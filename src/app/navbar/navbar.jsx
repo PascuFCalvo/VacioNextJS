@@ -86,7 +86,7 @@ const Navbar = () => {
           } flex-col lg:flex-row`}
         >
           <a
-            href="#muerte"
+            href="/pages/documental"
             className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >

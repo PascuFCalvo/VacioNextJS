@@ -5,9 +5,8 @@ import librogris from "../../../public/assets/librogris.png";
 import Navbar from "../navbar/navbar";
 import Image from "next/image";
 import NavbarAside from "../navbarAside/navbarAside";
-import "./styles.css";
 
-export default function Home() {
+export default function Documental() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
