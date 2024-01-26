@@ -1,0 +1,23 @@
+section p {
+   overflow: hidden;
+   max-height: 0;
+   text-align: justify;
+   color: white;
+   background: rgb(38 38 38);
+   transition: all 0.4s ease-in;
+}
+
+section a {
+   text-decoration: none;
+   display: block;
+   text-align: center;
+   padding: 10px;
+   background-color: rgb(38 38 38);
+   border-bottom: 2px solid rgb(38 38 38)1;
+   color: white;
+}
+
+section:target p {
+   max-height: 150px;
+   padding: 10px;
+}

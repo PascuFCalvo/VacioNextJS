@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import librogris from "../../../public/assets/librogris.png";
-import Navbar from "../navbar/navbar";
+import "./styles.css";
 import Image from "next/image";
 import NavbarAside from "../navbarAside/navbarAside";
 import MiniNavbar from "../navbar/miniNavbar";
+import { ArrowDownwardOutlined } from "@mui/icons-material";
 
 export default function Documental() {
   const [name, setName] = useState("");
@@ -162,73 +163,71 @@ export default function Documental() {
             </div>
           </div>
         </div>
+        <h1 className="text-2xl font-black mt-10">PREGUNTAS FRECUENTES</h1>
 
-        <div className="bg-amber-50 w-full h-auto flex flex-col items-center ">
-          <h1 className="text-2xl font-semibold m-4">
-            PREGUNTAS Y DUDAS FRECUENTES
-          </h1>
-          <div className=" flex flex-col md:flex-row mt-1">
-            <div className="dropdown inline-block relative h-auto  md:mb-0">
-              <h1 className="bg-neutral-800 text-white font-semibold py-2 px-4 m-0 inline-flex items-center mr-10 ">
-                <span className="mr-1 w-[300px] text-xs ">
-                  ¿Como se que he hecho bien la reserva?
-                </span>
-              </h1>
+        <div className="container flex flex-col items-center justify-center content-center  lg:flex-row  mb-10 w-5/6 h-[450px]">
+          <div className="mr-0 lg:mr-10  max-w-[600px]">
+            <section id="menu1" className="mb-10 bg-neutral-800">
+              <div className="flex flex-row items-center justify-between">
+                <a href="#menu1">¿Como se que he hecho bien la reserva?</a>
+                <a href="#menu1">
+                  <ArrowDownwardOutlined></ArrowDownwardOutlined>
+                </a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A,
+                aspernatur delectus soluta quibusdam et voluptatum, laborum
+                perspiciatis natus nostrum alias quos cupiditate, necessitatibus
+                autem ex. Animi fugiat veritatis dignissimos commodi?
+              </p>
+            </section>
 
-              <a className="  py-2  block w-[320px]  ">
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                estándar de las industrias desde el año 1500, cuando un impresor
-              </a>
-            </div>
-            <div className="dropdown inline-block relative h-auto  md:mb-0">
-              <h1 className="bg-neutral-800 text-white font-semibold py-2 px-4 m-0 inline-flex items-center mr-10 ">
-                <span className="mr-1 w-[300px] text-xs ">
-                  ¿Como se que he hecho bien la reserva?
-                </span>
-              </h1>
-
-              <a className="  py-2  block w-[320px]  ">
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                estándar de las industrias desde el año 1500, cuando un impresor
-              </a>
-            </div>
+            <section id="menu2" className="mb-10 bg-neutral-800">
+              <div className="flex flex-row items-center justify-between">
+                <a href="#menu2">¿Se hacen envios fuera de españa?</a>
+                <a href="#menu2">
+                  <ArrowDownwardOutlined></ArrowDownwardOutlined>
+                </a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A,
+                aspernatur delectus soluta quibusdam et voluptatum, laborum
+                perspiciatis natus nostrum alias quos cupiditate, necessitatibus
+                autem ex. Animi fugiat veritatis dignissimos commodi?
+              </p>
+            </section>
           </div>
-          <div className=" flex flex-col md:flex-row mt-1">
-            <div className="dropdown inline-block relative h-auto  md:mb-0">
-              <h1 className="bg-neutral-800 text-white font-semibold py-2 px-4 m-0 inline-flex items-center mr-10 ">
-                <span className="mr-1 w-[300px] text-xs ">
-                  ¿Como se que he hecho bien la reserva?
-                </span>
-              </h1>
+          <div className="max-w-[600px]">
+            <section id="menu3" className="mb-10 bg-neutral-800">
+              <div className="flex flex-row items-center justify-between">
+                <a href="#menu3">¿Como se paga?</a>
+                <a href="#menu3">
+                  <ArrowDownwardOutlined></ArrowDownwardOutlined>
+                </a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A,
+                aspernatur delectus soluta quibusdam et voluptatum, laborum
+                perspiciatis natus nostrum alias quos cupiditate, necessitatibus
+                autem ex. Animi fugiat veritatis dignissimos commodi?
+              </p>
+            </section>
 
-              <a className="  py-2  block w-[320px]  ">
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                estándar de las industrias desde el año 1500, cuando un impresor
-              </a>
-            </div>
-            <div className="dropdown inline-block relative h-auto  md:mb-0">
-              <h1 className="bg-neutral-800 text-white font-semibold py-2 px-4 m-0 inline-flex items-center mr-10 ">
-                <span className="mr-1 w-[300px] text-xs ">
-                  ¿Como se que he hecho bien la reserva?
-                </span>
-              </h1>
-
-              <a className="  py-2  block w-[320px]  ">
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                estándar de las industrias desde el año 1500, cuando un impresor
-              </a>
-            </div>
+            <section id="menu4" className="mb-10 bg-neutral-800">
+              <div className="flex flex-row items-center justify-between">
+                <a href="#menu4">¿Hay PDF o libro electronico?</a>
+                <a href="#menu4">
+                  <ArrowDownwardOutlined></ArrowDownwardOutlined>
+                </a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A,
+                aspernatur delectus soluta quibusdam et voluptatum, laborum
+                perspiciatis natus nostrum alias quos cupiditate, necessitatibus
+                autem ex. Animi fugiat veritatis dignissimos commodi?
+              </p>
+            </section>
           </div>
-          <a
-            className="mt-2 flex  rounded-md bg-neutral-800 px-3.5 py-5 text-sm font-semibold text-white shadow-sm hover:bg-neutral-800 hover:cursor-pointer mb-10"
-            href="/"
-          >
-            VOLVER
-          </a>
         </div>
       </div>
     </div>
