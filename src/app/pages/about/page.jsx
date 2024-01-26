@@ -98,7 +98,7 @@ export default function About() {
         <MotivationGallery />
 
         <div>
-          <h1 className="motivacion text-5xl text-center mb-10">
+          <h1 className="pt-10  motivacion text-5xl text-center mb-10">
             HAGAMOS DE ESTO UN MUNDO MEJOR
           </h1>
           <div className="flex flex-col items-center content-center justify-center md:flex-row">

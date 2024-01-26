@@ -26,11 +26,6 @@ export default function Home() {
             Lorem Ipsum es simplemente el texto de relleno de las imprentas y
             archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
             de las industrias desde el año 1500, cuando un impresor (N. del T.
-            persona que se dedica a la imprenta) desconocido usó una galería de
-            textos y los mezcló de tal manera que logró hacer un libro de textos
-            especimen. No sólo sobrevivió 500 años, sino que tambien ingresó
-            como texto de relleno en documentos electrónicos, quedando
-            esencialmente igual al original. Fue
           </p>
         </div>
 
@@ -60,11 +55,18 @@ export default function Home() {
                 alt="Juan"
                 className="w-96 h-96 object-cover"
               />
-              <p className="text-xl font-bold text-center"> JUAN DUAL</p>
+              <p className="text-xl font-bold text-center mt-2"> JUAN DUAL</p>
               <p className="h-14">Superviviente protagonista y poco mas</p>
               <div className="mb-10">
-                <LinkedIn />
-                <Instagram />
+                <a
+                  href=" https://www.linkedin.com/in/juan-dual-mateo-b6277695/"
+                  target="_blank"
+                >
+                  <LinkedIn className="h-10 w-10" />
+                </a>
+                <a href="https://www.instagram.com/dualcillo/" target="_blank">
+                  <Instagram className="h-10 w-10" />
+                </a>
               </div>
             </div>
             <div className="text-amber-50 p-2 ]">
@@ -73,11 +75,20 @@ export default function Home() {
                 alt="Juan"
                 className="w-96 h-96 object-cover"
               />
-              <p className="text-xl font-bold text-center">EDUARDO PÈLACH</p>
+              <p className="text-xl font-bold text-center mt-2">
+                EDUARDO PÈLACH
+              </p>
               <p className="h-14">Camara y todo lo que tenga que ser</p>
               <div className="mb-10">
-                <LinkedIn />
-                <Instagram />
+                <a
+                  href="https://www.linkedin.com/in/eduardo-pelach-alonso/"
+                  target="_blank"
+                >
+                  <LinkedIn className="h-10 w-10" />
+                </a>
+                <a href="https://www.instagram.com/flashnflow/" target="_blank">
+                  <Instagram className="h-10 w-10" />
+                </a>
               </div>
             </div>
             <div className="text-amber-50 p-2  ">
@@ -86,11 +97,20 @@ export default function Home() {
                 alt="Juan"
                 className="w-96 h-96 object-cover"
               />
-              <p className="text-xl font-bold text-center">GORKA MARTINEZ</p>
+              <p className="text-xl font-bold text-center mt-2">
+                GORKA MARTINEZ
+              </p>
               <p className="h-14">Camara y todo lo que tenga que ser</p>
               <div className="mb-10">
-                <LinkedIn />
-                <Instagram />
+                <a
+                  href="https://www.linkedin.com/in/gorkamartinez/"
+                  target="_blank"
+                >
+                  <LinkedIn className="h-10 w-10" />
+                </a>
+                <a href="https://www.instagram.com/gkmph/" target="_blank">
+                  <Instagram className="h-10 w-10" />
+                </a>
               </div>
             </div>
           </div>
@@ -99,19 +119,13 @@ export default function Home() {
         <h1 className="text-4xl text-center w-4/5 max-w-[800px]  text-amber-50 font-bold mb-10">
           ¿Como ayudar a este loco proyecto?
         </h1>
-        <p className="text-amber-50 w-4/5 max-w-[800px] p-4">
+        <p className="text-amber-50 w-4/5 max-w-[800px] p-2">
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y
           archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
-          las industrias desde el año 1500, cuando un impresor (N. del T.
-          persona que se dedica a la imprenta) desconocido usó una galería de
-          textos y los mezcló de tal manera que logró hacer un libro de textos
-          especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como
-          texto de relleno en documentos electrónicos, quedando esencialmente
-          igual al original. Fue
         </p>
 
         <a
-          className="mt-40 flex  rounded-md bg-neutral-800 px-3.5 py-5 text-sm font-semibold text-white shadow-sm hover:bg-neutral-800 hover:cursor-pointer  mb-10"
+          className="mt-10 flex  rounded-md bg-amber-50 px-6 py-3 text-sm font-semibold text-neutral-800 shadow-sm hover:bg-amber-100 hover:cursor-pointer  mb-10"
           href="/"
         >
           VOLVER
