@@ -37,31 +37,31 @@ const Navbar = () => {
         <div
           className={`lg:flex ${
             isNavbarOpen ? "flex" : "hidden"
-          } flex-col lg:flex-row`}
+          } flex-col items-center lg:flex-row`}
         >
           <a
             href="#juan"
-            className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
+            className="text-s   mb-5 lg:mb-1 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
             ¿Quien es Juan?
           </a>
           <a
             href="#libro"
-            className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
+            className="text-xs   mb-5 lg:mb-0 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
             LIBRO
           </a>
           <a
             href="#retos"
-            className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
+            className="text-xs   mb-5 lg:mb-0 lg:mr-8 hover:text-teal-500"
           >
             RETOS
           </a>
           <a
             href="#"
-            className="text-xs hover:cursor-pointer  mb-2 lg:mb-0 hover:text-teal-500"
+            className="text-xs hover:cursor-pointer  mb-5 lg:mb-0 hover:text-teal-500"
             onClick={closeNavbar}
           >
             CHARLAS
@@ -70,7 +70,7 @@ const Navbar = () => {
 
         {/* "JUAN VACIO" - oculto en dispositivos móviles */}
         <div
-          className={`mb-2 lg:mb-0 ${isNavbarOpen ? "hidden" : "block"}`}
+          className={`mb-5 lg:mb-0 ${isNavbarOpen ? "hidden" : "block"}`}
           onClick={closeNavbar}
         >
           <a href="/" className="text-2xl hover:text-teal-500 ">
@@ -81,11 +81,11 @@ const Navbar = () => {
         <div
           className={`lg:flex ${
             isNavbarOpen ? "flex" : "hidden"
-          } flex-col lg:flex-row`}
+          } flex-col items-center lg:flex-row`}
         >
           <a
             href="/pages/documental"
-            className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
+            className="text-xs   mb-5 lg:mb-0 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
             DOCUMENTAL
@@ -93,14 +93,14 @@ const Navbar = () => {
 
           <a
             href="#"
-            className="text-xs   mb-2 lg:mb-0 lg:mr-8 hover:text-teal-500"
+            className="text-xs   mb-5 lg:mb-0 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
             FAMILIA
           </a>
           <a
             href="#contacto"
-            className="text-xs   mb-2 lg:mb-0 hover:text-teal-500"
+            className="text-xs   mb-5 lg:mb-0 hover:text-teal-500"
             onClick={closeNavbar}
           >
             CONTACTO

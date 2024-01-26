@@ -7,7 +7,6 @@ import edudocu from "../../../../public/assets/eduardo-documental.png";
 
 import Image from "next/image";
 import NavbarAside from "../../navbarAside/navbarAside";
-import YoutubeEmbed from "@/app/components/YoutubeEmbed";
 import { Instagram, LinkedIn } from "@mui/icons-material";
 import MiniNavbar from "@/app/navbar/miniNavbar";
 
@@ -35,13 +34,23 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="w-full bg-neutral-900 flex flex-col justify-center items-center py-5 ">
-          <YoutubeEmbed className="max-w-5/6 " embedId="ZRS0hYmDy4k" />
+        <div className="w-screen h-[600px] bg-neutral-900 flex flex-col justify-center items-center content-center">
+          <div className="flex flex-col items-center content-center justify-center w-5/6 max-w-[1000px] h-5/6 ">
+            <iframe
+              className="video w-full h-full"
+              src="https://www.youtube.com/embed/ZRS0hYmDy4k"
+              allowFullScreen
+              autoPlay="true"
+              loop="true"
+              controls="false"
+            />
+          </div>
         </div>
+
         <div className=" mt-40 bg-neutral-800 w-full  flex flex-col  justify-center items-center content-center ">
           <div className="  left-0 flex justify-center mb-[-150px] w-full md:w-1/2"></div>
 
-          <h1 className="text-4xl text-center text-amber-50 font-bold pt-10 mb-10">
+          <h1 className="text-4xl w-4/5 max-w-[800px] text-center text-amber-50 font-bold pt-10 mb-10">
             ¿QUIENES HACEMOS ESTE PROYECTO?
           </h1>
           <div className=" flex flex-col items-center md:flex-row w-5/6 justify-between">
@@ -87,10 +96,10 @@ export default function Home() {
           </div>
         </div>
 
-        <h1 className="text-4xl text-center text-amber-50 font-bold mb-10">
+        <h1 className="text-4xl text-center w-4/5 max-w-[800px]  text-amber-50 font-bold mb-10">
           ¿Como ayudar a este loco proyecto?
         </h1>
-        <p className="text-amber-50 max-w-[800px] p-4">
+        <p className="text-amber-50 w-4/5 max-w-[800px] p-4">
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y
           archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
           las industrias desde el año 1500, cuando un impresor (N. del T.
