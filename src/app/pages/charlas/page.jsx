@@ -10,11 +10,14 @@ import "./styles.css";
 import MotivationGallery from "@/app/components/motivation-gallery";
 import MiniNavbar from "@/app/navbar/miniNavbar";
 import Contact from "../contact/page";
+import NavbarAside from "@/app/navbarAside/navbarAside";
+import Link from "next/link";
 
 export default function Charlas() {
   return (
     <div>
       <MiniNavbar />
+      <NavbarAside />
       <div className="flex flex-col items-center min-h-[1700px] lg:min-h-[1000px] bg-amber-50 ">
         <div className="max-w-[1400px] flex flex-col-reverse lg:flex-row">
           <div className="relative lg:min-w-[500px] w-full  lg:ml-0 lg:mr-0 lg:w-1/2  bg-teal-500 mt-[50px] lg:mt-[100px] max-h-[300px] text-2xl flex flex-col content-center items-center justify-center text-center p-20 ">
@@ -55,6 +58,14 @@ export default function Charlas() {
                 aliquet lacinia, ligula nisl tincidunt justo.
               </p>
             </div>
+            <Link href="mailto:juan.dual.mateo@gmail.com">
+              <button
+                className="w-24 bg-neutral-900 text-white p-4 hover:scale-110"
+                type="button"
+              >
+                Contacto
+              </button>
+            </Link>
           </div>
         </div>
       </div>
