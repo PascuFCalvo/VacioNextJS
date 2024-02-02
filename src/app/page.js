@@ -1,5 +1,6 @@
 "use client";
 
+import Charlamos from "./components/charlamos";
 import MotivationGallery from "./components/motivation-gallery";
 import Gallery from "./galeria/gallery";
 import MainPage from "./mainSection/page";
@@ -17,8 +18,12 @@ export default function Home() {
         <MainPage />
         <MainPage2 />
         <MainPage3 />
-        <div className="flex flex-col items-center content-center justify-center bg-teal-500 w-screen h-[700px]">
+        <div
+          className="flex flex-col items-center content-center justify-center bg-teal-500 w-screen h-[1000px] "
+          id="charlas"
+        >
           <MotivationGallery />
+          <Charlamos />
         </div>
 
         <NavbarAside />

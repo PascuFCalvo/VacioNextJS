@@ -60,7 +60,7 @@ const Navbar = () => {
             RETOS
           </a>
           <a
-            href="#"
+            href="#charlas"
             className="text-xs hover:cursor-pointer  mb-5 lg:mb-0 hover:text-teal-500"
             onClick={closeNavbar}
           >
