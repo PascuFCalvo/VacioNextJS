@@ -60,10 +60,10 @@ export default function Charlas() {
             </div>
             <Link href="mailto:juan.dual.mateo@gmail.com">
               <button
-                className="w-24 bg-neutral-900 text-white p-4 hover:scale-110"
+                className="w-48 bg-neutral-900 text-white p-4 hover:scale-110"
                 type="button"
               >
-                Contacto
+                mandame un mail
               </button>
             </Link>
           </div>
@@ -93,7 +93,7 @@ export default function Charlas() {
             height={600}
             className="mb-[100px]"
           />
-          <div className="hidden md:block absolute top-[-100px] left-[-200px] w-[300px] h-[240px] bg-yellow-500 z-1 px-4">
+          <div className="hidden lg:block absolute top-[-100px] left-[-200px] w-[300px] h-[240px] bg-yellow-500 z-1 px-4">
             <div className="relative">
               <h1 className="absolute text-5xl text-white/50 m-2 z-0">01</h1>
               <h1 className="text-xl font-bold mb-10 text-center mt-2 ">
@@ -109,7 +109,7 @@ export default function Charlas() {
             </p>
           </div>
 
-          <div className="hidden md:block  absolute top-[400px] left-[-200px] w-[300px] h-[200px] bg-yellow-500 z-1 px-4">
+          <div className="hidden lg:block  absolute top-[400px] left-[-200px] w-[300px] h-[200px] bg-yellow-500 z-1 px-4">
             <div className="relative">
               <h1 className="absolute text-5xl text-white/50 m-2 z-0">02</h1>
               <h1 className="text-xl font-bold mb-10 text-center mt-2 ">
@@ -124,7 +124,7 @@ export default function Charlas() {
             </p>
           </div>
 
-          <div className="hidden md:block  absolute top-[400px] left-[400px] w-[300px] h-[240px] bg-yellow-500 z-1 px-4">
+          <div className="hidden lg:block  absolute top-[400px] left-[400px] w-[300px] h-[240px] bg-yellow-500 z-1 px-4">
             <div className="relative">
               <h1 className="absolute text-5xl text-white/50 m-2 z-0">03</h1>
               <h1 className="text-xl font-bold mb-10 text-center mt-2 ">
@@ -141,7 +141,7 @@ export default function Charlas() {
           <div></div>
         </div>
       </div>
-      <div className="mt-[-350px] md:mt-[-50px]">
+      <div className="mt-[-350px] sm:mt-[-200px] md:mt-[-150px] lg:mt-[-50px]">
         <Contact />
       </div>
 

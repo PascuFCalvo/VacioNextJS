@@ -114,7 +114,7 @@ export default function About() {
               </a>
             </div>
             <div className="relative flex flex-col text-center text-xl font-bold">
-              <a href="/charlas">
+              <a href="/pages/charlas">
                 <Image
                   src={charlas}
                   alt="charlas"
@@ -126,7 +126,7 @@ export default function About() {
               </a>
             </div>
             <div className="relative flex flex-col text-center text-xl font-bold">
-              <a href="/marcas">
+              <a href="/pages/marcas">
                 <Image
                   src={marcas}
                   alt="marcas"
