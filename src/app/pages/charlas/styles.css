@@ -1,0 +1,10 @@
+@font-face {
+   font-family: edo;
+   src: url("../../../../public/EDOSZ.TTF");
+}
+
+
+
+.motivacion {
+   font-family: edo;
+}

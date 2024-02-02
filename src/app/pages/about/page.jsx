@@ -1,7 +1,6 @@
 "use client";
 
 import "./styles.css";
-import Navbar from "@/app/navbar/navbar";
 import NavbarAside from "@/app/navbarAside/navbarAside";
 import Image from "next/image";
 import juancocina from "../../../../public/assets/sociales.jpg";
