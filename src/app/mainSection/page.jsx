@@ -11,6 +11,7 @@ export default function LandinPageSection4() {
           src={require("../../../public/assets/teaser3.mp4")}
           autoPlay
           muted
+          loop
           controls
         />
       </Suspense>
