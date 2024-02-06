@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Navbar from "../navbar/navbar";
 
 export default function LandinPageSection4() {
