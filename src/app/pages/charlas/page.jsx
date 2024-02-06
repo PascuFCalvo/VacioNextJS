@@ -164,7 +164,7 @@ export default function Charlas() {
           </div>
 
           <div className="relative flex flex-col text-center text-xl font-bold">
-            <a href="/marcas">
+            <a href="/pages/marcas">
               <Image
                 src={marcas}
                 alt="marcas"
