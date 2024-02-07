@@ -28,12 +28,12 @@ export default function Charlas() {
               alt="charlas"
               width={400}
               height={500}
-              className="absolute scale-75 md:scale-100 top-[200px]  lg:ml-40  lg:top-[240px]"
+              className="absolute scale-75 md:scale-100 top-[200px]  lg:ml-40  lg:top-[240px] border-4 border-amber-50"
             />
           </div>
 
           <div className="w-full mt-[100px] min-w-[500px] flex flex-col items-center content-center justify-center lg:w-1/2 ">
-            <h1 className="text-2xl lg:text-3xl font-bold mt-10 mb-10">
+            <h1 className="text-2xl lg:text-3xl font-bold mt-10 mb-10 text-balance">
               HABLEMOS DE LA MUERTE
             </h1>
             <div className="px-20 text-xl mt-10 mb-10">

@@ -62,10 +62,10 @@ export default function Home() {
                   href=" https://www.linkedin.com/in/juan-dual-mateo-b6277695/"
                   target="_blank"
                 >
-                  <LinkedIn className="h-10 w-10" />
+                  <LinkedIn className="h-10 w-10 hover:text-teal-600" />
                 </a>
                 <a href="https://www.instagram.com/dualcillo/" target="_blank">
-                  <Instagram className="h-10 w-10" />
+                  <Instagram className="h-10 w-10 hover:text-teal-600" />
                 </a>
               </div>
             </div>
@@ -84,10 +84,10 @@ export default function Home() {
                   href="https://www.linkedin.com/in/eduardo-pelach-alonso/"
                   target="_blank"
                 >
-                  <LinkedIn className="h-10 w-10" />
+                  <LinkedIn className="h-10 w-10 hover:text-teal-600" />
                 </a>
                 <a href="https://www.instagram.com/flashnflow/" target="_blank">
-                  <Instagram className="h-10 w-10" />
+                  <Instagram className="h-10 w-10 hover:text-teal-600" />
                 </a>
               </div>
             </div>
@@ -106,10 +106,10 @@ export default function Home() {
                   href="https://www.linkedin.com/in/gorkamartinez/"
                   target="_blank"
                 >
-                  <LinkedIn className="h-10 w-10" />
+                  <LinkedIn className="h-10 w-10 hover:text-teal-600" />
                 </a>
                 <a href="https://www.instagram.com/gkmph/" target="_blank">
-                  <Instagram className="h-10 w-10" />
+                  <Instagram className="h-10 w-10 hover:text-teal-600" />
                 </a>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function Home() {
         </p>
 
         <a
-          className="mt-10 flex  rounded-md bg-amber-50 px-6 py-3 text-sm font-semibold text-neutral-800 shadow-sm hover:bg-amber-100 hover:cursor-pointer  mb-10"
+          className="mt-10 flex  rounded-md bg-amber-50 px-6 py-3 text-sm font-semibold text-neutral-800 shadow-sm hover:bg-neutral-900  hover:cursor-pointer hover:text-amber-50 mb-10"
           href="/"
         >
           VOLVER

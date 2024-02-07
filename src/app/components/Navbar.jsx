@@ -45,6 +45,15 @@ export default function Navbar() {
         } lg:flex`}
       >
         <div
+          className={` mt-2 ${isNavbarOpen ? "block" : "hidden"}`}
+          onClick={closeNavbar}
+        >
+          <a href="/" className="text-m hover:text-teal-500 ">
+            INICIO
+          </a>
+        </div>
+
+        <div
           className={`lg:flex ${
             isNavbarOpen ? "flex" : "hidden"
           } flex-col items-center lg:flex-row`}
@@ -65,7 +74,8 @@ export default function Navbar() {
           </a>
           <a
             href="#retos"
-            className="text-xs   mb-5 lg:mb-0 lg:mr-8 hover:text-teal-500"
+            className="text-xs mb-5 lg:mb-0 lg:mr-8 hover:text-teal-500"
+            onClick={closeNavbar}
           >
             RETOS
           </a>
@@ -115,7 +125,6 @@ export default function Navbar() {
             CONTACTO
           </a>
 
-          {/* Botón para cerrar la hamburguesa - visible solo en móviles */}
           <button
             className={`text-2xl  text-red-500 hover:text-red-700 mt-8 lg:hidden`}
             onClick={closeNavbar}

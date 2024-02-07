@@ -57,7 +57,7 @@ export default function MotivationGallery() {
             >
               TERMINAR UN MARATON
             </div>
-            <p className="hidden md:block">
+            <p className="hidden md:block text-balance">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
@@ -85,7 +85,7 @@ export default function MotivationGallery() {
             >
               SONREIR A LA MUERTE
             </div>
-            <p className="hidden md:block">
+            <p className="hidden md:block text-balance">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
@@ -113,7 +113,7 @@ export default function MotivationGallery() {
             >
               UN TRAIL ENTRE GLACIARES? WHY NOT
             </div>
-            <p className="hidden md:block">
+            <p className="hidden md:block text-balance">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.

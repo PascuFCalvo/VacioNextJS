@@ -4,7 +4,7 @@ export default function Charlamos() {
       <h1 className="text-2xl font-bold mt-5">
         AHORA QUE ME CONOCES ¿CHARLAMOS?
       </h1>
-      <p className="mt-5 p-10">
+      <p className="mt-5 p-10 text-balance">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum
         mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo
         vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet

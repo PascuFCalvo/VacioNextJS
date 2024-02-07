@@ -92,8 +92,9 @@ export default function Documental() {
               </h1>
               <h1 className="text-white mt-10 text-center md:mb-10">
                 O puedes mandarme un mail a
-                <span className="text-neutral-900 font-bold">
-                  soy@juanvacio.com
+                <span className="text-neutral-900 font-bold text-xl">
+                  {" "}
+                  soy@juanvacio.com{" "}
                 </span>
                 y te llegara igual!
               </h1>
