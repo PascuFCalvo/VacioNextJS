@@ -7,7 +7,7 @@ export default function MainPage() {
       <Navbar />
       <Suspense fallback={<div>Loading...</div>}>
         <video
-          className="w-full h-auto min-w-full min-h-[350px] md:min-h-full object-cover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          className="w-screen h-auto min-w-full min-h-[350px] max-h-screen md:min-h-full object-cover absolute "
           src={require("../../../public/assets/teaser3.mp4")}
           autoPlay
           muted
