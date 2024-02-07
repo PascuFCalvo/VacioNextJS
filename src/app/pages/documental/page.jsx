@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import juandocu from "../../../../public/assets/dual-docuemntal.png";
 import gorkadocu from "../../../../public/assets/gorka-documental.png";
 import edudocu from "../../../../public/assets/eduardo-documental.png";
@@ -8,23 +7,13 @@ import edudocu from "../../../../public/assets/eduardo-documental.png";
 import Image from "next/image";
 import NavbarAside from "../../navbarAside/navbarAside";
 import { Instagram, LinkedIn } from "@mui/icons-material";
-import MiniNavbar from "@/app/navbar/Navbar";
-import { usePathname } from "next/navigation";
+import Navbar from "@/app/navbar/Navbar";
+import Contact from "../contact/page";
 
 export default function Home() {
-  const pathname = usePathname();
-  const [mainPage, setMainPage] = useState(false);
-
-  useEffect(() => {
-    if (pathname === "/") {
-      setMainPage(true);
-    } else {
-      setMainPage(false);
-    }
-  }, [pathname]);
   return (
     <div>
-      <MiniNavbar></MiniNavbar>
+      <Navbar></Navbar>
       <NavbarAside></NavbarAside>
       <div className="bg-neutral-800 w-full flex flex-col justify-center items-center content-center">
         <div className=" mt-40 bg-neutral-800 w-4/5 h-[300px] flex flex-col  justify-center items-center content-center ">
@@ -141,6 +130,9 @@ export default function Home() {
         >
           VOLVER
         </a>
+      </div>
+      <div className="mt-[-40px]">
+        <Contact />
       </div>
     </div>
   );

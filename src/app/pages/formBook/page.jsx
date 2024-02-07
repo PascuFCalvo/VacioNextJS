@@ -5,29 +5,16 @@ import librogris from "../../../../public/assets/librogris.png";
 import "./styles.css";
 import Image from "next/image";
 import NavbarAside from "../../navbarAside/navbarAside";
-import MiniNavbar from "../../navbar/miniNavbar";
 import { ArrowDownwardOutlined } from "@mui/icons-material";
 import { usePathname } from "next/navigation";
-import Navbar from "@/app/navbar/navbar";
+import Navbar from "@/app/navbar/Navbar";
+import Contact from "../contact/page";
 
 export default function Documental() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-
-  const pathname = usePathname();
-  const [mainPage, setMainPage] = useState(false);
-
-  console.log(pathname);
-
-  useEffect(() => {
-    if (pathname === "/") {
-      setMainPage(true);
-    } else {
-      setMainPage(false);
-    }
-  }, [pathname]);
 
   const handleSubmit = async (e) => {
     setLoading(true);
@@ -244,6 +231,9 @@ export default function Documental() {
             </section>
           </div>
         </div>
+      </div>
+      <div className="mt-[-40px]">
+        <Contact />
       </div>
     </div>
   );

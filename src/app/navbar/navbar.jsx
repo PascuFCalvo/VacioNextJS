@@ -19,6 +19,8 @@ const Navbar = () => {
     }
   }, [pathname]);
 
+  console.log(pathname);
+
   const closeNavbar = () => {
     setNavbarOpen(false);
   };
@@ -39,7 +41,6 @@ const Navbar = () => {
         </div>
       </button>
 
-      {/* Navbar */}
       <nav
         className={`fixed flex flex-col lg:flex-row lg:text-left lg:justify-evenly py-4 px-6 bg-neutral-800/70 w-full sm:w-full shadow lg:items-baseline  text-white  z-50 ${
           isNavbarOpen ? "block" : "hidden"
@@ -79,7 +80,6 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* "JUAN VACIO" - oculto en dispositivos móviles */}
         <div
           className={`mb-5 lg:mb-0 ${isNavbarOpen ? "hidden" : "block"}`}
           onClick={closeNavbar}
@@ -95,7 +95,7 @@ const Navbar = () => {
           } flex-col items-center lg:flex-row`}
         >
           <a
-            href="/pages/documental"
+            href={mainPage ? "/pages/documental" : "/pages/documental"}
             className="text-xs   mb-5 lg:mb-0 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
