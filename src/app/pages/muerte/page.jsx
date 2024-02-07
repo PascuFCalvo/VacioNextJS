@@ -3,6 +3,16 @@ import "./styles.css";
 import Image from "next/image";
 import juanbaila from "../../../../public/assets/juanbaila.jpg";
 export default function Muerte() {
+  const pathname = usePathname();
+  const [mainPage, setMainPage] = useState(false);
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setMainPage(true);
+    } else {
+      setMainPage(false);
+    }
+  }, [pathname]);
   return (
     <div
       id="muerte"

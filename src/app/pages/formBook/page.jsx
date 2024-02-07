@@ -1,18 +1,33 @@
 "use client";
 
-import { useState } from "react";
-import librogris from "../../../public/assets/librogris.png";
+import { useEffect, useState } from "react";
+import librogris from "../../../../public/assets/librogris.png";
 import "./styles.css";
 import Image from "next/image";
-import NavbarAside from "../navbarAside/navbarAside";
-import MiniNavbar from "../navbar/miniNavbar";
+import NavbarAside from "../../navbarAside/navbarAside";
+import MiniNavbar from "../../navbar/miniNavbar";
 import { ArrowDownwardOutlined } from "@mui/icons-material";
+import { usePathname } from "next/navigation";
+import Navbar from "@/app/navbar/navbar";
 
 export default function Documental() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+
+  const pathname = usePathname();
+  const [mainPage, setMainPage] = useState(false);
+
+  console.log(pathname);
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setMainPage(true);
+    } else {
+      setMainPage(false);
+    }
+  }, [pathname]);
 
   const handleSubmit = async (e) => {
     setLoading(true);
@@ -52,7 +67,7 @@ export default function Documental() {
 
   return (
     <div>
-      <MiniNavbar></MiniNavbar>
+      <Navbar />
       <NavbarAside></NavbarAside>
       <div className="bg-amber-50 w-full flex flex-col justify-center items-center content-center">
         <div className=" mt-10 bg-amber-50 w-full h-[600px] flex flex-col-reverse md:flex-row  justify-center items-center content-center ">

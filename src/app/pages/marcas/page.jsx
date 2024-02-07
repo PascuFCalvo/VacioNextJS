@@ -3,13 +3,13 @@
 import Image from "next/image";
 import "./styles.css";
 import marcas from "../../../../public/assets/logo-alargados.png";
-import MiniNavbar from "@/app/navbar/miniNavbar";
+import MiniNavbar from "@/app/navbar/Navbar";
 import NavbarAside from "@/app/navbarAside/navbarAside";
 
 export default function Marcas() {
   return (
     <div className="bg-amber-50 h-[1200px] md:h-screen">
-      <MiniNavbar />
+      <Navbar />
       <NavbarAside />
       <div className="w-full flex flex-col content-center items-center ">
         <Image

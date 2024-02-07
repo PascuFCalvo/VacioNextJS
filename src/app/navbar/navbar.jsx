@@ -2,11 +2,22 @@
 
 import { ArrowBack, PlayArrow } from "@mui/icons-material";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import tripa from "../../../public/assets/tripa.png";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isNavbarOpen, setNavbarOpen] = useState(false);
+  const pathname = usePathname();
+  const [mainPage, setMainPage] = useState(false);
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setMainPage(true);
+    } else {
+      setMainPage(false);
+    }
+  }, [pathname]);
 
   const closeNavbar = () => {
     setNavbarOpen(false);
@@ -40,14 +51,14 @@ const Navbar = () => {
           } flex-col items-center lg:flex-row`}
         >
           <a
-            href="#juan"
+            href={mainPage ? "#juan" : "/pages/about"}
             className="text-s   mb-5 lg:mb-1 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
             ¿Quien es Juan?
           </a>
           <a
-            href="#libro"
+            href={mainPage ? "#libro" : "/pages/formBook"}
             className="text-xs   mb-5 lg:mb-0 lg:mr-8 hover:text-teal-500"
             onClick={closeNavbar}
           >
@@ -60,7 +71,7 @@ const Navbar = () => {
             RETOS
           </a>
           <a
-            href="#charlas"
+            href={mainPage ? "#charlas" : "/pages/charlas"}
             className="text-xs hover:cursor-pointer  mb-5 lg:mb-0 hover:text-teal-500"
             onClick={closeNavbar}
           >

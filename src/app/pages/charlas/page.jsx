@@ -8,15 +8,28 @@ import marcas from "../../../../public/assets/sponsors.png";
 import "./styles.css";
 
 import MotivationGallery from "@/app/components/motivation-gallery";
-import MiniNavbar from "@/app/navbar/miniNavbar";
+import MiniNavbar from "@/app/navbar/Navbar";
 import Contact from "../contact/page";
 import NavbarAside from "@/app/navbarAside/navbarAside";
 import Link from "next/link";
+import Navbar from "@/app/navbar/Navbar";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Charlas() {
+  const pathname = usePathname();
+  const [mainPage, setMainPage] = useState(false);
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setMainPage(true);
+    } else {
+      setMainPage(false);
+    }
+  }, [pathname]);
   return (
     <div>
-      <MiniNavbar />
+      <Navbar />
       <NavbarAside />
       <div className="flex flex-col items-center min-h-[1700px] lg:min-h-[1000px] bg-amber-50 ">
         <div className="max-w-[1400px] flex flex-col-reverse lg:flex-row">

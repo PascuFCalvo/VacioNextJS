@@ -119,7 +119,7 @@ export default function MainPage2() {
             dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
             laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
           </p>
-          <a className="z-10" href="./formBook/">
+          <a className="z-10" href="/pages/formBook">
             <button className=" text-3xl bg-teal-500 hover:bg-teal-300 text-white font-bold py-4 px-6   rounded mt-10  z-1 hover:text-neutral-900 mb-10">
               CONSIGUELO AQUI
             </button>

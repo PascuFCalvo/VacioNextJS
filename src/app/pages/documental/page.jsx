@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import juandocu from "../../../../public/assets/dual-docuemntal.png";
 import gorkadocu from "../../../../public/assets/gorka-documental.png";
 import edudocu from "../../../../public/assets/eduardo-documental.png";
@@ -8,9 +8,20 @@ import edudocu from "../../../../public/assets/eduardo-documental.png";
 import Image from "next/image";
 import NavbarAside from "../../navbarAside/navbarAside";
 import { Instagram, LinkedIn } from "@mui/icons-material";
-import MiniNavbar from "@/app/navbar/miniNavbar";
+import MiniNavbar from "@/app/navbar/Navbar";
+import { usePathname } from "next/navigation";
 
 export default function Home() {
+  const pathname = usePathname();
+  const [mainPage, setMainPage] = useState(false);
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setMainPage(true);
+    } else {
+      setMainPage(false);
+    }
+  }, [pathname]);
   return (
     <div>
       <MiniNavbar></MiniNavbar>

@@ -11,12 +11,26 @@ import contar from "../../../../public/assets/historia.png";
 import cortada from "../../../../public/assets/juan-cortada.png";
 import MotivationGallery from "@/app/components/motivation-gallery";
 import Contact from "../contact/page";
-import MiniNavbar from "@/app/navbar/miniNavbar";
+import MiniNavbar from "@/app/navbar/Navbar";
+import Navbar from "@/app/navbar/navbar";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function About() {
+  const pathname = usePathname();
+  const [mainPage, setMainPage] = useState(false);
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setMainPage(true);
+    } else {
+      setMainPage(false);
+    }
+  }, [pathname]);
+
   return (
     <div className="w-screen flex-col bg-amber-50 ">
-      <MiniNavbar />
+      <Navbar />
       <NavbarAside />
       <div className=" w-full flex flex-col content-center justify-center items-center">
         <div className="mt-40  w-screen flex flex-col justify-center items-center content-center md:flex-row-reverse  md:justify-evenly ">
