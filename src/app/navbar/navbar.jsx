@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import tripa from "../../../public/assets/tripa.png";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+export default function Navbar() {
   const [isNavbarOpen, setNavbarOpen] = useState(false);
   const pathname = usePathname();
   const [mainPage, setMainPage] = useState(false);
@@ -126,6 +126,4 @@ const Navbar = () => {
       </nav>
     </div>
   );
-};
-
-export default Navbar;
+}
