@@ -7,7 +7,7 @@ import Image from "next/image";
 import NavbarAside from "../../navbarAside/navbarAside";
 import { ArrowDownwardOutlined } from "@mui/icons-material";
 
-import Navbar from "@/app/navbar/Navbar";
+
 import Contact from "../contact/page";
 
 export default function Documental() {
@@ -54,7 +54,7 @@ export default function Documental() {
 
   return (
     <div>
-      <Navbar />
+      
       <NavbarAside></NavbarAside>
       <div className="bg-amber-50 w-full flex flex-col justify-center items-center content-center">
         <div className=" mt-10 bg-amber-50 w-full h-[600px] flex flex-col-reverse md:flex-row  justify-center items-center content-center ">

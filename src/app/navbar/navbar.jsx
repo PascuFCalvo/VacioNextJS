@@ -19,8 +19,6 @@ const Navbar = () => {
     }
   }, [pathname]);
 
-  console.log(pathname);
-
   const closeNavbar = () => {
     setNavbarOpen(false);
   };
