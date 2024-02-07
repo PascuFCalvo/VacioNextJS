@@ -8,10 +8,12 @@ import NavbarAside from "../../navbarAside/navbarAside";
 import { Instagram, LinkedIn } from "@mui/icons-material";
 
 import Contact from "../contact/page";
+import Navbar from "@/app/components/Navbar";
 
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <NavbarAside></NavbarAside>
       <div className="bg-neutral-800 w-full flex flex-col justify-center items-center content-center">
         <div className=" mt-40 bg-neutral-800 w-4/5 h-[300px] flex flex-col  justify-center items-center content-center ">
