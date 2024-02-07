@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
-import Navbar from "/../navbar/Navbar";
+import Navbar from "../navbar/Navbar";
 
-export default function LandinPageSection4() {
+export default function MainPage() {
   return (
     <div className="relative h-screen overflow-hidden bg-neutral-900">
       <Navbar />
