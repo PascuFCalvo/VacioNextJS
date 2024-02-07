@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../components/Navbar";
 
 export default function MainPage() {
   return (

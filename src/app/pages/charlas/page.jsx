@@ -11,13 +11,10 @@ import MotivationGallery from "@/app/components/motivation-gallery";
 import Contact from "../contact/page";
 import NavbarAside from "@/app/navbarAside/navbarAside";
 import Link from "next/link";
-import Navbar from "@/app/navbar/Navbar";
-
 
 export default function Charlas() {
   return (
     <div>
-      <Navbar />
       <NavbarAside />
       <div className="flex flex-col items-center min-h-[1700px] lg:min-h-[1000px] bg-amber-50 ">
         <div className="max-w-[1400px] flex flex-col-reverse lg:flex-row">
