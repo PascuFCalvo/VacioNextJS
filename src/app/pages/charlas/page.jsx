@@ -60,7 +60,7 @@ export default function Charlas() {
             </div>
             <Link href="mailto:juan.dual.mateo@gmail.com">
               <button
-                className="w-48 bg-neutral-900 text-white p-4 hover:scale-110"
+                className="w-48 bg-neutral-900 text-white p-4 hover:bg-neutral-700"
                 type="button"
               >
                 mandame un mail

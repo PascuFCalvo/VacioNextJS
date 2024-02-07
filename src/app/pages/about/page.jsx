@@ -111,7 +111,7 @@ export default function About() {
           </h1>
           <div className="flex flex-col items-center content-center justify-center md:flex-row">
             <div className="relative flex flex-col text-center text-xl font-bold">
-              <a href="/formBook">
+              <a href="/pages/formBook">
                 <Image
                   src={libro}
                   alt="libro"

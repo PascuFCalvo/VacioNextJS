@@ -145,7 +145,7 @@ export default function Documental() {
                 />
                 <button
                   type="submit"
-                  className="mt-10 flex justify-center rounded-md bg-neutral-900 px-3.5 py-5 text-sm font-semibold text-white shadow-sm hover:bg-neutral-800"
+                  className="mt-10 flex justify-center  bg-neutral-900 px-3.5 py-5 text-sm font-semibold text-white shadow-sm hover:bg-neutral-700"
                 >
                   {loading ? (
                     <div

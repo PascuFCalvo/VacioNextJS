@@ -97,7 +97,7 @@ export default function MainPage2() {
             </p>
           </h1>
           <a className="z-10" href="pages/about">
-            <button className=" text-3xl bg-teal-600 hover:bg-teal-300 text-white font-bold py-4 px-6 border  rounded mt-10  z-1 hover:text-neutral-900 mb-10">
+            <button className=" text-3xl bg-teal-600 hover:bg-teal-400 text-white font-bold py-4 px-6 border  rounded mt-10  z-1 hover:text-neutral-900 mb-10">
               CONOCE MI HISTORIA
             </button>
           </a>
@@ -122,7 +122,7 @@ export default function MainPage2() {
             laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
           </p>
           <a className="z-10" href="/pages/formBook">
-            <button className=" text-3xl bg-teal-600 hover:bg-teal-300 text-white font-bold py-4 px-6   rounded mt-10  z-1 hover:text-neutral-900 mb-10">
+            <button className=" text-3xl bg-teal-600 hover:bg-teal-400 text-white font-bold py-4 px-6   rounded mt-10  z-1 hover:text-neutral-900 mb-10">
               CONSIGUELO AQUI
             </button>
           </a>
