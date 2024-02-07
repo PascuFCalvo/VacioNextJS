@@ -90,7 +90,7 @@ export default function Documental() {
                 Rellena el formulario y me pondre en contacto contigo para
                 hacertelo llegar :)
               </h1>
-              <h1 className="text-white mt-10 text-center md:mb-10">
+              <h1 className="text-white mt-10 text-center md:mb-10 text-balance">
                 O puedes mandarme un mail a
                 <span className="text-neutral-900 font-bold text-xl">
                   {" "}
