@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className="text-4xl text-center text-amber-50 font-bold mb-10">
             LA MUERTE DE JUAN
           </h1>
-          <p className="text-amber-50">
+          <p className="text-amber-50 text-balance">
             Lorem Ipsum es simplemente el texto de relleno de las imprentas y
             archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
             de las industrias desde el año 1500, cuando un impresor (N. del T.
@@ -119,7 +119,7 @@ export default function Home() {
         <h1 className="text-4xl text-center w-4/5 max-w-[800px]  text-amber-50 font-bold mb-10">
           ¿Como ayudar a este loco proyecto?
         </h1>
-        <p className="text-amber-50 w-4/5 max-w-[800px] p-2">
+        <p className="text-amber-50 w-4/5 max-w-[800px] p-2 text-balance">
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y
           archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
         </p>

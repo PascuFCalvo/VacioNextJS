@@ -11,11 +11,12 @@ import contar from "../../../../public/assets/historia.png";
 import cortada from "../../../../public/assets/juan-cortada.png";
 import MotivationGallery from "@/app/components/motivation-gallery";
 import Contact from "../contact/page";
+import Navbar from "@/app/components/Navbar";
 
 export default function About() {
   return (
     <div className="w-screen flex-col bg-amber-50 ">
-      <NavbarAside />
+      <Navbar />
       <NavbarAside />
       <div className=" w-full flex flex-col content-center justify-center items-center">
         <div className="mt-40  w-screen flex flex-col justify-center items-center content-center md:flex-row-reverse  md:justify-evenly ">
@@ -36,16 +37,18 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col  w-3/4 md:w-1/3 justify-evenly">
-            <h1 className="text-teal-500 text-2xl font-bold mb-10">
+            <h1 className="text-teal-500 text-2xl font-bold mb-10 text-balance">
               {" "}
               VER 3 VECES MI MUERTE ME HA HECHO QUE VIVA AL MAXIMO
             </h1>
-            <p>
+            <p className="text-balance">
               Con 18 años me quitaron el colon y el recto, con 20 el estomago y
               la vesicula y ahora con 30 me dedido a hacer carreras de ultra
               distancia, como lo que quiero y tengo una vida plena
             </p>
-            <p>Nunca me han parado y ahora soy mas fuerte </p>
+            <p className="text-balance">
+              Nunca me han parado y ahora soy mas fuerte{" "}
+            </p>
           </div>
         </div>
         <div className="w-screen flex flex-col-reverse justify-center content-center items-center md:items-start md:justify-evenly md:content-center md:flex-row">
@@ -53,40 +56,47 @@ export default function About() {
             <div className="absolute bottom-[600px] md:bottom-[500px] border-8 border-white max-w-[400px]">
               <Image src={cortada} alt="cortada" width={400} height={400} />
             </div>
-            <h1 className="absolute bottom-1/3 w-4/5 text-4xl text-center motivacion">
+            <h1 className="absolute bottom-1/3 w-4/5 text-4xl text-center motivacion text-balance">
               Dicen que soy un ejemplo de superacion, supongo que sera por esto
             </h1>
           </div>
           <div className="flex flex-col w-3/4 md:w-1/3 md:px-10 max-h-[700px] overflow-hidden">
-            <h1 className="text-teal-500 text-2xl font-bold mt-10 mb-10  ">
-              {" "}
+            <h1 className="text-teal-500 text-2xl font-bold mt-10 mb-10 text-balance ">
               VER 3 VECES MI MUERTE ME HA HECHO QUE VIVA AL MAXIMO
             </h1>
-            <p>
+            <p className="text-balance">
               Con 18 años me quitaron el colon y el recto, con 20 el estomago y
               la vesicula y ahora con 30 me dedido a hacer carreras de ultra
               distancia, como lo que quiero y tengo una vida plena
             </p>
-            <p>Nunca me han parado y ahora soy mas fuerte </p>
-            <p>
+            <p className="text-balance">
+              Nunca me han parado y ahora soy mas fuerte{" "}
+            </p>
+            <p className="text-balance">
               Con 18 años me quitaron el colon y el recto, con 20 el estomago y
               la vesicula y ahora con 30 me dedido a hacer carreras de ultra
               distancia, como lo que quiero y tengo una vida plena
             </p>
-            <p>Nunca me han parado y ahora soy mas fuerte </p>
-            <p>
+            <p className="text-balance">
+              Nunca me han parado y ahora soy mas fuerte{" "}
+            </p>
+            <p className="text-balance">
               Con 18 años me quitaron el colon y el recto, con 20 el estomago y
               la vesicula y ahora con 30 me dedido a hacer carreras de ultra
               distancia, como lo que quiero y tengo una vida plena
             </p>
-            <p>Nunca me han parado y ahora soy mas fuerte </p>
-            <p>
+            <p className="text-balance">
+              Nunca me han parado y ahora soy mas fuerte{" "}
+            </p>
+            <p className="text-balance">
               Con 18 años me quitaron el colon y el recto, con 20 el estomago y
               la vesicula y ahora con 30 me dedido a hacer carreras de ultra
               distancia, como lo que quiero y tengo una vida plena
             </p>
-            <p>Nunca me han parado y ahora soy mas fuerte </p>
-            <p>
+            <p className="text-balance">
+              Nunca me han parado y ahora soy mas fuerte{" "}
+            </p>
+            <p className="text-balance">
               Con 18 años me quitaron el colon y el recto, con 20 el estomago y
               la vesicula y ahora con 30 me dedido a hacer carreras de ultra
               distancia, como lo que quiero y tengo una vida plena

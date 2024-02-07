@@ -76,23 +76,25 @@ export default function MainPage2() {
               id="juan"
               className=" opacity-20 absolute  h-full w-auto top-0 right-0  z-0 "
             ></Image>
-            <p className=" mt-10 mb-2">
+            <p className=" mt-10 mb-2 text-pretty ">
               ¡Hola! Soy Juan y ¡estoy Vacío por dentro!
             </p>
 
-            <p className="mb-2">
+            <p className="mb-2 text-pretty">
               Así, como lees. Me han quitado, a lo largo de los años, el
               estómago, el colon, el recto y la vesícula biliar.
             </p>
 
-            <p className="mb-2">
+            <p className="mb-2 text-pretty">
               Casi me muero en varias ocasiones por complicaciones en las
               cirugías pero, a pesar de todo, he ido sobreviviendo y adivina
               qué: gracias al deporte de ultra distancia me siento más vivo que
               nunca.
             </p>
 
-            <p className="mb-2">Acompañame a mis saraos y te cuento mas!</p>
+            <p className="mb-2 text-pretty">
+              Acompañame a mis saraos y te cuento mas!
+            </p>
           </h1>
           <a className="z-10" href="pages/about">
             <button className=" text-3xl bg-teal-600 hover:bg-teal-300 text-white font-bold py-4 px-6 border  rounded mt-10  z-1 hover:text-neutral-900 mb-10">
@@ -110,11 +112,11 @@ export default function MainPage2() {
         <section className="ml-10 mr-20 max-w-[500px]">
           <p
             href="./formBook/"
-            className="mt-10 mb-10  text-2xl md:text-2xl md:mt-0 font-bold  hover:cursor-pointer"
+            className="mt-10 mb-10  text-2xl md:text-2xl md:mt-0 font-bold  hover:cursor-pointer text-balance"
           >
             VACIO UN LIBRO QUE INSPIRA
           </p>
-          <p className="">
+          <p className="text-balance">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
             laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.

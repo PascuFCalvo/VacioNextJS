@@ -20,7 +20,7 @@ export default function Charlas() {
       <NavbarAside />
       <div className="flex flex-col items-center min-h-[1700px] lg:min-h-[1000px] bg-amber-50 ">
         <div className="max-w-[1400px] flex flex-col-reverse lg:flex-row">
-          <div className="relative lg:min-w-[500px] w-full  lg:ml-0 lg:mr-0 lg:w-1/2  bg-teal-600 mt-[50px] lg:mt-[100px] max-h-[300px] text-2xl flex flex-col content-center items-center justify-center text-center p-20 ">
+          <div className="relative lg:min-w-[500px] w-full  lg:ml-0 lg:mr-0 lg:w-1/2  bg-teal-600 mt-[50px] lg:mt-[100px] max-h-[300px] text-2xl flex flex-col content-center items-center justify-center text-center p-20 text-balance">
             Me dedico a compartir mi historia en todo tipo de lugares. ¿Te
             gustaria escucharla?
             <Image
@@ -37,22 +37,22 @@ export default function Charlas() {
               HABLEMOS DE LA MUERTE
             </h1>
             <div className="px-20 text-xl mt-10 mb-10">
-              <p>
+              <p className="text-balance">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 euismod, nunc et aliquet lacinia, ligula nisl tincidunt justo,
                 ac luctus nunc nunc id lectus.
               </p>
-              <p>
+              <p className="text-balance">
                 Nullam euismod, nisi et aliquam tincidunt, nunc nisl tincidunt
                 justo, ac luctus nunc nunc id lectus. Sed euismod, nunc et
                 aliquet lacinia, ligula nisl tincidunt justo.
               </p>
-              <p>
+              <p className="text-balance">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 euismod, nunc et aliquet lacinia, ligula nisl tincidunt justo,
                 ac luctus nunc nunc id lectus.
               </p>
-              <p>
+              <p className="text-balance">
                 Nullam euismod, nisi et aliquam tincidunt, nunc nisl tincidunt
                 justo, ac luctus nunc nunc id lectus. Sed euismod, nunc et
                 aliquet lacinia, ligula nisl tincidunt justo.
@@ -96,13 +96,12 @@ export default function Charlas() {
           <div className="hidden lg:block absolute top-[-100px] left-[-200px] w-[300px] h-[240px] bg-yellow-500 z-1 px-4">
             <div className="relative">
               <h1 className="absolute text-5xl text-white/50 m-2 z-0">01</h1>
-              <h1 className="text-xl font-bold mb-10 text-center mt-2 ">
+              <h1 className="text-xl font-bold mb-10 text-center mt-2 text-balance">
                 Contacta comingo
               </h1>
             </div>
 
-            <p>
-              {" "}
+            <p className="text-balance">
               Nullam euismod, nisi et aliquam tincidunt, nunc nisl tincidunt
               justo, ac luctus nunc nunc id lectus. Sed euismod, nunc et aliquet
               lacinia, ligula nisl tincidunt justo.
@@ -116,8 +115,7 @@ export default function Charlas() {
                 Te contesto
               </h1>
             </div>
-            <p>
-              {" "}
+            <p className="text-balance">
               Nullam euismod, nisi et aliquam tincidunt, nunc nisl tincidunt
               justo, ac luctus nunc nunc id lectus. Sed euismod, nunc et aliquet
               lacinia, ligula nisl tincidunt justo.
@@ -131,8 +129,7 @@ export default function Charlas() {
                 Charlamos
               </h1>
             </div>
-            <p>
-              {" "}
+            <p className="text-balance">
               Nullam euismod, nisi et aliquam tincidunt, nunc nisl tincidunt
               justo, ac luctus nunc nunc id lectus. Sed euismod, nunc et aliquet
               lacinia, ligula nisl tincidunt justo.

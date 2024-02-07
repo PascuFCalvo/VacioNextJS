@@ -71,7 +71,7 @@ export default function Documental() {
             <h1 className="text-4xl text-center text-teal-500 font-bold mb-10">
               VACIO
             </h1>
-            <p>
+            <p className="text-balance">
               Lorem Ipsum es simplemente el texto de relleno de las imprentas y
               archivos de texto. Lorem Ipsum ha sido el texto de relleno
               estándar de las industrias desde el año 1500, cuando un impresor
@@ -86,15 +86,15 @@ export default function Documental() {
         <div className="w-screen h-auto  bg-teal-600 flex content-center items-center justify-center md:justify-evenly">
           <div className="relative flex flex-col ustify-center content-center items-center md:flex-row gap-4 ">
             <div className="flex flex-col justify-center content-center items-center  gap-4 w-5/6 md:w-1/2 md:px-20">
-              <h1 className={`mt-40 text-3xl text-white`}>
+              <h1 className={`mt-40 text-3xl text-white text-balance`}>
                 Rellena el formulario y me pondre en contacto contigo para
-                hacertelo llegar :){" "}
+                hacertelo llegar :)
               </h1>
               <h1 className="text-white mt-10 text-center md:mb-10">
-                O puedes mandarme un mail a{" "}
+                O puedes mandarme un mail a
                 <span className="text-neutral-900 font-bold">
-                  soy@juanvacio.com{" "}
-                </span>{" "}
+                  soy@juanvacio.com
+                </span>
                 y te llegara igual!
               </h1>
             </div>
