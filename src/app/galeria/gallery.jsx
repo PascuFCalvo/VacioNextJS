@@ -1,17 +1,17 @@
 import Image from "next/image";
 
-import juan1 from "../../../assets/juan1.jpg";
-import juan2 from "../../../assets/juan2.jpg";
-import juan3 from "../../../assets/juan3.jpg";
-import juan4 from "../../../assets/juan4.jpg";
-import juan5 from "../../../assets/juan5.jpg";
-import juan6 from "../../../assets/juan6.jpg";
-import juan7 from "../../../assets/juan7.jpg";
-import juan8 from "../../../assets/juan8.jpg";
-import juan9 from "../../../assets/juan9.jpg";
-import juan10 from "../../../assets/juan10.jpg";
-import juan11 from "../../../assets/juan11.jpg";
-import juan12 from "../../../assets/juan12.jpg";
+import juan1 from "../../../public/assets/juan1.jpg";
+import juan2 from "../../../public/assets/juan2.jpg";
+import juan3 from "../../../public/assets/juan3.jpg";
+import juan4 from "../../../public/assets/juan4.jpg";
+import juan5 from "../../../public/assets/juan5.jpg";
+import juan6 from "../../../public/assets/juan6.jpg";
+import juan7 from "../../../public/assets/juan7.jpg";
+import juan8 from "../../../public/assets/juan8.jpg";
+import juan9 from "../../../public/assets/juan9.jpg";
+import juan10 from "../../../public/assets/juan10.jpg";
+import juan11 from "../../../public/assets/juan11.jpg";
+import juan12 from "../../../public/assets/juan12.jpg";
 
 export default function Gallery() {
   return (
