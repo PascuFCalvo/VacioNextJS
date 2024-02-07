@@ -12,7 +12,7 @@ import "./transition.css";
 export default function NavbarAside() {
   return (
     <div className="fixed top-0 h-screen right-0 bg-neutral-100/20 flex flex-col items-center justify-center pb-5 pt-5 z-50 lg:mt-[66px]">
-      <div className="flex flex-col mt[-66px]">
+      <div className="flex flex-col lg:mt-[-66px]">
         <Link href="https://www.instagram.com/dualcillo/" target="_blank">
           <Instagram className="social-icon text-3xl text-neutral-900 m-2 hover:text-5xl lg:mt-[66px] " />
         </Link>
