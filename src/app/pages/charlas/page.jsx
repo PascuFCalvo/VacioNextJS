@@ -19,8 +19,8 @@ export default function Charlas() {
       <Navbar />
       <NavbarAside />
       <div className="flex flex-col items-center min-h-[1700px] lg:min-h-[1000px] bg-amber-50 ">
-        <div className="max-w-[1400px] flex flex-col-reverse lg:flex-row">
-          <div className="relative lg:min-w-[500px] w-full  lg:ml-0 lg:mr-0 lg:w-1/2  bg-teal-600 mt-[50px] lg:mt-[100px] max-h-[300px] text-2xl flex flex-col content-center items-center justify-center text-center p-20 text-balance">
+        <div className="max-w-[1400px] flex flex-col lg:flex-row">
+          <div className="relative lg:min-w-[500px] w-full  lg:ml-0 lg:mr-0 lg:w-1/2  bg-teal-600 mt-[0px] md:mt-[50px] lg:mt-[100px] max-h-[300px] text-2xl flex flex-col content-center items-center justify-center text-center p-20 text-balance">
             Me dedico a compartir mi historia en todo tipo de lugares. ¿Te
             gustaria escucharla?
             <Image
@@ -32,7 +32,7 @@ export default function Charlas() {
             />
           </div>
 
-          <div className="w-full mt-[100px] min-w-[500px] flex flex-col items-center content-center justify-center lg:w-1/2 ">
+          <div className="w-full mt-[400px] lg:mt-[100px] min-w-[500px] flex flex-col items-center content-center justify-center lg:w-1/2 ">
             <h1 className="text-2xl lg:text-3xl font-bold mt-10 mb-10 text-balance">
               HABLEMOS DE LA MUERTE
             </h1>
@@ -69,7 +69,7 @@ export default function Charlas() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center  min-h-[1000px] w-full bg-neutral-900">
+      <div className="flex flex-col items-center sm:mt-[-400px] lg:mt-[0px]  min-h-[1000px] w-full bg-neutral-900">
         <h1 className="text-white text-3xl font-bold mt-[100px] mb-[50px] md:mb-[200px]">
           ¿Como lo haremos?
         </h1>
