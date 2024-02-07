@@ -6,6 +6,7 @@ import Gallery from "./galeria/gallery";
 import MainPage from "./mainSection/page";
 import MainPage2 from "./mainSection2/page";
 import MainPage3 from "./mainSection3/page";
+import Navbar from "./navbar/Navbar";
 import NavbarAside from "./navbarAside/navbarAside";
 import Contact from "./pages/contact/page";
 
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <header className="bg-neutral-900"></header>
       <main className="bg-neutral-900">
+        <Navbar></Navbar>
         <MainPage />
         <MainPage2 />
         <MainPage3 />
