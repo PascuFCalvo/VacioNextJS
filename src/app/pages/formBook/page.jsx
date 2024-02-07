@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import librogris from "../../../../public/assets/librogris.png";
 import "./styles.css";
 import Image from "next/image";
 import NavbarAside from "../../navbarAside/navbarAside";
 import { ArrowDownwardOutlined } from "@mui/icons-material";
-import { usePathname } from "next/navigation";
+
 import Navbar from "@/app/navbar/Navbar";
 import Contact from "../contact/page";
 

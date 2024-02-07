@@ -12,8 +12,6 @@ import cortada from "../../../../public/assets/juan-cortada.png";
 import MotivationGallery from "@/app/components/motivation-gallery";
 import Contact from "../contact/page";
 import Navbar from "@/app/navbar/Navbar";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 
 export default function About() {
   return (

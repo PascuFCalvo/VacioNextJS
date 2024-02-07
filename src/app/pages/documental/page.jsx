@@ -3,7 +3,6 @@
 import juandocu from "../../../../public/assets/dual-docuemntal.png";
 import gorkadocu from "../../../../public/assets/gorka-documental.png";
 import edudocu from "../../../../public/assets/eduardo-documental.png";
-
 import Image from "next/image";
 import NavbarAside from "../../navbarAside/navbarAside";
 import { Instagram, LinkedIn } from "@mui/icons-material";

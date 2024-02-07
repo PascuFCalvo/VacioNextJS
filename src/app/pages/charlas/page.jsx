@@ -12,8 +12,6 @@ import Contact from "../contact/page";
 import NavbarAside from "@/app/navbarAside/navbarAside";
 import Link from "next/link";
 import Navbar from "@/app/navbar/Navbar";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 
 export default function Charlas() {
   return (
