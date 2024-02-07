@@ -83,7 +83,7 @@ export default function Documental() {
             </p>
           </div>
         </div>
-        <div className="w-screen h-auto  bg-teal-500 flex content-center items-center justify-center md:justify-evenly">
+        <div className="w-screen h-auto  bg-teal-600 flex content-center items-center justify-center md:justify-evenly">
           <div className="relative flex flex-col ustify-center content-center items-center md:flex-row gap-4 ">
             <div className="flex flex-col justify-center content-center items-center  gap-4 w-5/6 md:w-1/2 md:px-20">
               <h1 className={`mt-40 text-3xl text-white`}>

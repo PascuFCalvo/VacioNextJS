@@ -16,6 +16,7 @@ export default function About() {
   return (
     <div className="w-screen flex-col bg-amber-50 ">
       <NavbarAside />
+      <NavbarAside />
       <div className=" w-full flex flex-col content-center justify-center items-center">
         <div className="mt-40  w-screen flex flex-col justify-center items-center content-center md:flex-row-reverse  md:justify-evenly ">
           <div className=" relative mb-20 w-3/4 md:w-1/3 ">
@@ -48,7 +49,7 @@ export default function About() {
           </div>
         </div>
         <div className="w-screen flex flex-col-reverse justify-center content-center items-center md:items-start md:justify-evenly md:content-center md:flex-row">
-          <div className="relative  mt-40 bg-teal-500 max-w-[800px] w-5/6 h-[900px] flex justify-evenly md:w-1/2 md:ml-10 md:mt-20">
+          <div className="relative  mt-40 bg-teal-600 max-w-[800px] w-5/6 h-[900px] flex justify-evenly md:w-1/2 md:ml-10 md:mt-20">
             <div className="absolute bottom-[600px] md:bottom-[500px] border-8 border-white max-w-[400px]">
               <Image src={cortada} alt="cortada" width={400} height={400} />
             </div>

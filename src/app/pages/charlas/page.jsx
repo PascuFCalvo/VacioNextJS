@@ -20,7 +20,7 @@ export default function Charlas() {
       <NavbarAside />
       <div className="flex flex-col items-center min-h-[1700px] lg:min-h-[1000px] bg-amber-50 ">
         <div className="max-w-[1400px] flex flex-col-reverse lg:flex-row">
-          <div className="relative lg:min-w-[500px] w-full  lg:ml-0 lg:mr-0 lg:w-1/2  bg-teal-500 mt-[50px] lg:mt-[100px] max-h-[300px] text-2xl flex flex-col content-center items-center justify-center text-center p-20 ">
+          <div className="relative lg:min-w-[500px] w-full  lg:ml-0 lg:mr-0 lg:w-1/2  bg-teal-600 mt-[50px] lg:mt-[100px] max-h-[300px] text-2xl flex flex-col content-center items-center justify-center text-center p-20 ">
             Me dedico a compartir mi historia en todo tipo de lugares. ¿Te
             gustaria escucharla?
             <Image

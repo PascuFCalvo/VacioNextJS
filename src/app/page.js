@@ -18,7 +18,7 @@ export default function Home() {
         <MainPage2 />
         <MainPage3 />
         <div
-          className="flex flex-col items-center content-center justify-center bg-teal-500 w-screen h-[1000px] "
+          className="flex flex-col items-center content-center justify-center bg-teal-600 w-screen h-[1000px] "
           id="charlas"
         >
           <MotivationGallery />
